@@ -1,0 +1,26 @@
+---
+import CustomNavItem from "./CustomNavItem.astro";
+
+//data imports - https://www.youtube.com/watch?v=6XzyobQYQVQ
+import navData from "../data/navData.js";
+---
+
+<nav>
+        {
+            navData.map((item) => (
+                <CustomNavItem
+                    text={item.name}
+                    href={item.path}
+                    style="viz"
+                    isFilled={false}
+                    borderVisable={true}
+                    classes="bg-green-200"
+                    icon={{
+                        name: "ic:baseline-add-photo-alternative",
+                        side: "right",
+                    }}
+                />
+            ))
+        }
+
+</nav>

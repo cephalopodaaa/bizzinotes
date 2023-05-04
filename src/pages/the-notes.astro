@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import CardBrowser from "../components/CardBrowser/App";
+import CardDeck from "../components/CardDeck/App";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<CardDeck />
+		<h2 class="text-center text-5xl text-biz1 font-biz">test2</h2>
+		<h2 class="text-center text-5xl text-viz1 font-viz">test2</h2>
+		<div class="flex w-3/5 justify-center items-center bg-slate-900 min-w-screen m-20 p-10">
+			<CardBrowser />
+		</div>
+		<h2 class="text-center text-5xl text-fiz1 font-fiz">test2</h2>
+		<h2 class="text-center text-5xl text-wiz1 font-wiz">test2</h2>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+---
+const {option, path, message} = Astro.props;
+
+---
+
+<li
+    class="
+    py-2 px-6 rounded-3xl m-3 box-border bg-slate-900 text-viz1 hover:text-biz1
+    data-ripple-light="true"
+    "
+    data-text={message}
+>
+    <a href={`./${path}`}>{option}</a>
+</li>

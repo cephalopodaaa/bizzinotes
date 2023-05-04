@@ -1,0 +1,21 @@
+---
+import NavItem from "./NavItem.astro";
+
+//data imports - https://www.youtube.com/watch?v=6XzyobQYQVQ
+import navData from "../data/navData.js";
+---
+
+<nav>
+    <ul class="font-biz text-5xl text-purple-300 flex justify-center">
+        {
+            navData.map((item) => (
+                <NavItem
+                    option={item.name}
+                    path={item.path}
+                    messsage={item.message}
+                />
+            ))
+        }
+    </ul>
+</nav>
+

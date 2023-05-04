@@ -1,0 +1,27 @@
+---
+// component import
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+// style import
+import "../styles/global.css";
+const {
+  title = "BizziNotes",
+  description = "Bizzi Notes by a Bizzi Bloke",
+} = Astro.props;
+---
+
+<html lang="en">
+  <Header {title} {description} />
+  <body class="
+  h-screen bg-gradient-to-b from-teal-400 via-violet-600 to-yellow-200
+  ">
+    <div>
+    <Navbar />
+    <main>
+      <slot> Default Text</slot>
+    </main>
+    <Footer client:onload />
+    </div>
+  </body>
+</html>

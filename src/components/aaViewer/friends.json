@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "biz",
+    "image": "/final-characters/b1.png",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "color": "#d6C1d2"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Krabs",
+    "image":
+      "/final-characters/d1.png",
+    "occupation": "Restaurant Owner",
+    "location": "A Giant Anchor",
+    "color": "#42a158"
+  },
+  {
+    "id": 3,
+    "name": "Squidward",
+    "image":
+      "/final-characters/f1.png",
+    "occupation": "Cashier",
+    "location": "An Easter Island Head",
+    "color": "#01FF3c"
+  }
+]
