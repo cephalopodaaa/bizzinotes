@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPostLayout.astro"
 title: TestBlogPost
 date: 04-05-23
-author: Bizzi
+author: biz
 image: {
     src: "/final-characters/1b.png",
     alt: "biz looking dashing",

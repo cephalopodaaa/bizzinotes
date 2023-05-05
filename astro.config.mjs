@@ -7,5 +7,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), image(), mdx()]
+  integrations: [react(), tailwind(), image({
+    serviceEntryPoint: '@astrojs/image/sharp'
+  }), mdx()]
 });

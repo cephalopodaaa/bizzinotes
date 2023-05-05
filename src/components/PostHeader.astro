@@ -1,0 +1,23 @@
+---
+import {Image, Picture} from '@astrojs/image/components';
+
+const {category, title, author, date, image} = Astro.props;
+
+---
+
+<div class="flex">
+    <h1>{author} Notes</h1>
+    <a href={`/the-medium/${category}`} class="text-orange-300">{category}</a>
+    <a href={`/the-notes/${author}`} class="text-blue-300">more by {author}</a>
+    <p>posted: {date}</p>
+</div>
+    <Image
+     src={image.src}
+     alt={image.alt}
+     width="200"
+     aspectRatio=1:1
+     format="avif"
+     quality={90}
+     fit="cover"
+     class="shadow-2xl"
+     />

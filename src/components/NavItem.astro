@@ -1,6 +1,5 @@
 ---
 const {option, path, message} = Astro.props;
-
 ---
 
 <li
@@ -10,5 +9,5 @@ const {option, path, message} = Astro.props;
     "
     data-text={message}
 >
-    <a href={`./${path}`}>{option}</a>
+    <a href={path}>{option}</a>
 </li>

@@ -1,32 +1,32 @@
 const navData = [
   {
     name: "cooking",
-    path: "./cooking",
+    path: "/cooking",
     message: "Rhythmic Recipes",
   },
   {
     name: "music",
-    path: "./music",
+    path: "/music",
     message: "Tantilising Tunes",
   },
   {
     name: "science",
-    path: "./science",
+    path: "/science",
     message: "Delicious Know-how",
   },
   {
     name: "running",
-    path: "./running",
+    path: "/running",
     message: "How to enjoy it without getting injured",
   },
   {
     name: "where am I?",
-    path: "./asdfasf",
+    path: "/asdfasf",
     message: "What is this place?!",
   },
   {
     name: "Testing-blog",
-    path: "./test",
+    path: "/test",
     message: "testtest123",
   },
 ]

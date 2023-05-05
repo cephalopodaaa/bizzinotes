@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import PostHeader from "../components/PostHeader.astro"
 
 const { frontmatter } = Astro.props;
 console.log(frontmatter); //This will be terminal of vscode
@@ -10,15 +11,8 @@ const { title, description, date, category, author, image } = frontmatter;
 ---
 
 <MainLayout title={title} description={description}>
-	<div class="flex">
-    <h1>{author} Notes</h1>
-    <a href={`/the-medium/${category}`} class="text-orange-300">{category}</a>
-    <a href={`/the-notes/${author}`} class="text-blue-300">more by {author}</a>
-    <p>posted: {date}</p>
-</div>
-    <img src="/final-characters/b1" width="200" />
-    <div class="bg-purple-300 font-diz1">
-        <slot />
+	<PostHeader {title} {description} {date} {category} {image} {author} />
+    <div class=`bg-purple-300 text-blue-700 font-${author}`>
+        <slot>*** blog text goes here ***</slot>
     </div>
-
 </MainLayout>
