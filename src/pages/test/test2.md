@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: TestBlogPost
+title: secondTestBlogPost
 date: 04-05-23
 author: diz
 image: {

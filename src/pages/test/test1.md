@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: TestBlogPost
+title: first test post
 date: 04-05-23
 author: biz
 image: {
