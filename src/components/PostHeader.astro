@@ -1,23 +1,58 @@
 ---
-import {Image, Picture} from '@astrojs/image/components';
+import { Image, Picture } from "@astrojs/image/components";
 
-const {category, title, description, author, date, image} = Astro.props;
-
+const { category, title, playlist, description, author, date, image } =
+    Astro.props;
 ---
 
-<div class="flex">
-    <h1>{author} Notes</h1>
-    <a href={`/the-medium/${category}`} class="text-orange-300">{category}</a>
-    <a href={`/the-notes/${author}`} class="text-blue-300">more by {author}</a>
-    <p>posted: {date}</p>
+<div class="flex flex-col text-biz1 bg-slate-700 font-biz w-full m-2 p-5">
+    <div class="flex justify-between">
+        <h1 class="text-4xl text-biz1">{title}</h1>
+        <h2 class="text-3xl text-biz1">{description}</h2>
+    </div>
+    <div class="flex flex-row justify-between bg-yellow-400 m-2">
+        <Image
+            src={image.src}
+            alt={image.alt}
+            width="200"
+            aspectRatio="auto"
+            format="avif"
+            quality={90}
+            fit="cover"
+            class="shadow-2xl shrink-0"
+        />
+
+        <div class="p-8 bg-black flex flex-col justify-between flex-1">
+            <iframe
+                class="rounded-full bg-slate-900 p-5 opacity-40 hover:opacity-100"
+                src={playlist}
+                width="100%"
+                height="122"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+
+            <h1 class="text-5xl text-center">{description}</h1>
+            <h3 class="text-xl"><slot name="intro" /></h3>
+            <a href={`/the-medium/${category}`} class="text-orange-300"
+                >{category}</a
+            >
+            <a href={`/the-notes/${author}`} class="text-blue-300"
+                >more by {author}</a
+            >
+            <p>posted: {date}</p>
+        </div>
+
+        <Image
+            src={image.src}
+            alt={image.alt}
+            width="200"
+            aspectRatio="auto"
+            format="avif"
+            quality={90}
+            fit="cover"
+            class="shadow-2xl shrink-0 m-5"
+        />
+    </div>
 </div>
-    <Image
-     src={image.src}
-     alt={image.alt}
-     width="200"
-     aspectRatio=1:1
-     format="avif"
-     quality={90}
-     fit="cover"
-     class="shadow-2xl"
-     />

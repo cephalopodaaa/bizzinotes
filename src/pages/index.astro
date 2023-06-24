@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
+import ButtonFun from "../components/ButtonFun.astro";
+import { Image, Picture } from "@astrojs/image/components";
 ---
 
 <html lang="en">
@@ -13,10 +15,22 @@ import Navbar from "../components/Navbar.astro";
 	</head>
 	<body>
 		<Navbar />
+		<Image
+		src= "/final-characters/b1.png"
+		alt="biz doing his thing"
+		width="200"
+		aspectRatio="auto"
+		format="avif"
+		quality={90}
+		fit="cover"
+		class="shrink-0 animate-slidein hover:animate-waving-hand "
+	/>
 		<h2 class="text-center text-5xl text-biz1 font-biz" >test2</h2>
 		<h2 class="text-center text-5xl text-viz1 font-viz" >test2</h2>
 		<h2 class="text-center text-5xl text-fiz1 font-fiz" >test2</h2>
 		<h2 class="text-center text-5xl text-wiz1 font-wiz" >test2</h2>
+
+		<ButtonFun option="Fun Button" />
 		<!-- <Menu options={options} /> -->
 	</body>
 </html>

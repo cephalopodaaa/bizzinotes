@@ -1,0 +1,18 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MinPostHeader from "../components/MinPostHeader.astro"
+
+const { frontmatter } = Astro.props;
+console.log(frontmatter); //This will be terminal of vscode
+
+const { category, title, description, slogan, note, date, image} = frontmatter;
+// saves it from being {frontmatter.title} ...ect
+
+---
+
+<MainLayout title={title} description={description}>
+	<MinPostHeader  {title} {slogan} {date} {category} {image} {note} />
+    <div class=`flex flex-col justify-evenly bg-purple-300 text-blue-700 font-${note}`>
+        <slot>*** blog text goes here ***</slot>
+    </div>
+</MainLayout>

@@ -1,0 +1,39 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import "../styles/global.css";
+const { frontmatter, url } = Astro.props;
+
+const { category, title, description, author, date, image } = frontmatter;
+---
+
+<!-- <p>{frontmatter.title}</p>
+<pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
+<article
+    class="flex flex-col justify-center m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl"
+>
+    <a href={url} class="flex justify-center">
+        <Image
+            src={image.src}
+            alt={image.alt}
+            width="200"
+            aspectRatio="1:1"
+            format="avif"
+            quality={100}
+            fit="cover"
+            class="grow rounded-2xl"
+        />
+    </a>
+    <div class="bg-slate-400 w-auto">
+        <a href={url}><h1 class="text-xl bg-slate-300 p-4">{title}</h1></a>
+        <h2 class="text-2xl">{author} Notes</h2>
+
+        <a href={`/the-medium/${category}`} class="text-orange-300"
+            >{category}</a
+        >
+        <a href={`/the-notes/${author}`} class="text-blue-300"
+            >more by {author}</a
+        >
+        <p>posted: {date}</p>
+        <p>{description}</p>
+    </div>
+</article>

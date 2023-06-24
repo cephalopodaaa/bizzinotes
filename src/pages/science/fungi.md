@@ -1,3 +1,41 @@
+---
+layout: "../../layouts/BlogPostLayout.astro"
+title: Fungi
+date: 04-05-23
+author: fiz
+image: {
+    src: "/final-characters/f1.png",
+    alt: "fiz looking dashing",
+}
+description: Some Fungal fun
+draft: false
+category: science
+---
+layout: "../../layouts/FoodPostLayout.astro"
+title: first test post
+date: 04-05-23
+note: biz
+image: {
+    src: "/final-characters/1b.png",
+    alt: "biz looking dashing",
+}
+description: This is just to get my blog system working
+slogan: yippee yipee yipee
+draft: false
+category: science
+layout: "../../layouts/FoodPostLayout.astro"
+title: first test post
+date: 04-05-23
+note: biz
+image: {
+    src: "/final-characters/1b.png",
+    alt: "biz looking dashing",
+}
+description: This is just to get my blog system working
+slogan: yippee yipee yipee
+draft: false
+
+
 Saccharomyces cerevisiae: This fungus, also known as baker's yeast, is a model organism that is widely used in the study of genetics, cell biology, and biotechnology. It is used to produce bread, beer, and other fermented products, and has been used to produce a number of biopharmaceuticals including vaccines and enzymes.
 
 Aspergillus niger: This fungus is a common contaminant of food and is often used in the production of enzymes, including those used in the food and beverage industry. It is also used in the production of a number of other products including antibiotics, organic acids, and flavors.

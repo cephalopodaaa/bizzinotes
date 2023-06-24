@@ -1,13 +1,18 @@
 ---
-setup:
-    import Layout from '../.../layouts/BaseBlogLayout.astro';
-note: riz
-name: Building a Second Brain
-slogan: How to organise your digital life
-img: /card-books/building-a-second-brain.jpg
-method: /food/whitegrapefruit.gif
-playlist: /bla/bla/bla
+layout: "../../layouts/MinBlogPostLayout.astro"
+title: Organising your digital life
+date: 04-05-23
+author: fiz
+image: {
+    src: "/books/secondbrain.jpg",
+    alt: "biz looking dashing",
+}
+description: Making your digital notes work better for you
+draft: false
+category: books
+playlist: https://open.spotify.com/embed/playlist/1fQ6Gq4NW8aCO9zr8dcR3q?utm_source=generator&theme=0
 ---
+
 # The Notes:
 Organisational tunes to get you motivated!
 

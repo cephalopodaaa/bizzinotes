@@ -1,0 +1,95 @@
+---
+const {
+    
+    stat1,
+    stat2,
+    stat3,
+    stat4,
+    stat5,
+    val1,
+    val2,
+    val3,
+    val4,
+    val5,
+} = Astro.props;
+
+// for (let i=1; i<6 ; i++) {
+//     let valu{i} = (val{i}/8.333333333333333333333333333333)
+//     let value{i} = Math.round(valu{i})
+//     console.log(value{i})
+// }
+// for (let i = 1; i < 6; i++) {
+//   let valName = `val${i}`; // Create the variable name dynamically using template literals
+//   let val = {valName}; // Access the value of the corresponding variable
+
+//   let fraction = val / 100; // Convert percentage to decimal fraction
+//   let fractionOver12 = fraction * 12; // Convert decimal fraction to fraction over 12
+//   let roundedFraction = Math.round(fractionOver12);
+//   console.log(roundedFraction);
+//   const {valName} = roundedFraction
+// 
+const statsarray = {
+      speediness: 11,
+      healthiness: 8,
+      easiness: 8,
+      Zinginess: 6,
+      Craziness: 5
+    };
+// cant get any of the above code to work so just going to set the vlaues to multiples of 12 in the meantime
+---
+
+<div class="bg-black flex flex-col flex-1 m-5 p-5 rounded-xl justify-between text-xl text-biz1">
+    <h1 class="text-2xl">The Stats</h1>
+
+
+    <div id="progress-bars-container" class="p-4"></div>
+
+  <script>
+    // Define the statsarray
+    // Get the container element
+    var container = document.getElementById("progress-bars-container");
+
+    // Loop through the statsarray
+    for (var key in statsarray) {
+      if (statsarray.hasOwnProperty(key)) {
+        // Create progress bar element
+        var progress = document.createElement("div");
+        progress.className = "mb-4";
+
+        // Create progress label
+        var progressLabel = document.createElement("div");
+        progressLabel.className = "mb-1 font-bold";
+        progressLabel.textContent = key;
+
+        // Create progress bar
+        var progressBar = document.createElement("div");
+        progressBar.className = "bg-green-500 h-3 rounded";
+        progressBar.style.width = statsarray[key] * 10 + "%";
+
+        // Append progress bar and label to the progress element
+        progress.appendChild(progressLabel);
+        progress.appendChild(progressBar);
+
+        // Append progress element to the container
+        container.appendChild(progress);
+      }
+    }
+  </script>
+
+
+
+    <div class="flex flex-col justify-center">
+    <h2>{stat1}:</h2>
+        <div class="mt-2 bg-gray-600 rounded-full">
+            <div
+                class=`w-${val1}/12 mt-2 bg-purple-700 py-1 text-center rounded-full`
+            >
+                <div
+                    class="text-white text-sm inline-block px-2 rounded-full"
+                >
+                    {val1}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
