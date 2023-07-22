@@ -14,7 +14,7 @@ website: "https://nature-of-code-2nd-edition.netlify.app/"
 playlist: "https://open.spotify.com/embed/playlist/5iYMunHkibZZChWf0rudZ5?utm_source=generator"
 ---
 ::: slot intro
-#
+
 what is life?
 where do you draw the line
 can you even draw the line

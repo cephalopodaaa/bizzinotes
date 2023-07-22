@@ -5,15 +5,15 @@ const { category, title, description, author, date, image } = Astro.props;
 
 
 const allPosts = await Astro.glob("./*.mdx");
-import MinPostCard from "../../components/MinPostCard.astro";
+import MaxPostCard from "../../components/MaxPostCard.astro";
 
 
 import MainLayout from "../../layouts/MainLayout.astro";
 ---
  
-<MainLayout title="The Science">
+<MainLayout title="The Cooking">
 
-	<div class="flex flex-col text-biz1 bg-slate-700 font-biz w-full h-full m-2 p-5">
+	<div class="flex flex-col text-biz1 bg-slate-900 font-biz w-full h-full m-2 p-5">
 		<div class="flex justify-between">
 		<h1 class="text-4xl text-biz1">{title}</h1>
 		<h2 class="text-3xl text-biz2">{description}</h2>
@@ -22,14 +22,13 @@ import MainLayout from "../../layouts/MainLayout.astro";
 			<Image
 				src="/final-characters/b1.png"
 				alt="fiz the science note"
-				width="200"
-				aspectRatio="1:1"
+				width={200}
+				height={500}
 				format="avif"
 				quality={90}
 				fit="cover"
-				class="h-5/6"
 			/>
-			<div class="bg-black flex flex-col w-1/3 p-3 text-fiz1">
+			<div class="bg-black flex flex-col w-1/3 p-3 text-biz1">
 				<h2 class="text-2xl">Welcome to:</h2>
 				<h1 class="text-4xl text-center ">The Food</h1>
 			</div>
@@ -37,25 +36,25 @@ import MainLayout from "../../layouts/MainLayout.astro";
 				<Image
 					src="/final-characters/b1.png"
 					alt="fiz the science note"
-					width="200"
-					aspectRatio="1:1"
+					width={200}
+					height={500}
 					format="avif"
 					quality={90}
 					fit="cover"
-					class="h-5/6"
 				/>
 		</div>
 
 	</div>
 
-	<section class="bg-slate-900 p-7 m-7 flex-column flex flex-wrap justify-center">
+	<section class="bg-slate-900 p-7 m-7 flex-col flex flex-wrap justify-center">
         <h1 class="text-xl font-biz text-white">Posts</h1>
-        <div class=" bg-slate-300 flex flex-wrap justify-evenly">
+        <div class=" bg-slate-800 flex flex-wrap justify-evenly">
         {
             allPosts.map((post) => (
-                <MinPostCard frontmatter={post.frontmatter} url={post.url} />
+                <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
             ))
         }
+		
         </div>
 
     </section>

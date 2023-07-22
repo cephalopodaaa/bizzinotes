@@ -1,48 +1,41 @@
 ---
 const {
-    
-    stat1,
-    stat2,
-    stat3,
-    stat4,
-    stat5,
-    val1,
-    val2,
-    val3,
-    val4,
-    val5,
+  stat1,
+  stat2,
+  stat3,
+  stat4,
+  stat5,
+  val1,
+  val2,
+  val3,
+  val4,
+  val5,
+  statsarray,
 } = Astro.props;
 
-// for (let i=1; i<6 ; i++) {
-//     let valu{i} = (val{i}/8.333333333333333333333333333333)
-//     let value{i} = Math.round(valu{i})
-//     console.log(value{i})
-// }
-// for (let i = 1; i < 6; i++) {
-//   let valName = `val${i}`; // Create the variable name dynamically using template literals
-//   let val = {valName}; // Access the value of the corresponding variable
+// write a script that loops through the stats array and converts the values to percentages of 12
+// then rounds them to the nearest whole number
 
-//   let fraction = val / 100; // Convert percentage to decimal fraction
-//   let fractionOver12 = fraction * 12; // Convert decimal fraction to fraction over 12
-//   let roundedFraction = Math.round(fractionOver12);
-//   console.log(roundedFraction);
-//   const {valName} = roundedFraction
-// 
-const statsarray = {
-      speediness: 11,
-      healthiness: 8,
-      easiness: 8,
-      Zinginess: 6,
-      Craziness: 5
-    };
-// cant get any of the above code to work so just going to set the vlaues to multiples of 12 in the meantime
+// array to store numerator of fraction
+const fractionArray = [];
+
+const numKeys = Object.keys(statsarray).length;
+for (let i = 0; i < numKeys; i++) {
+  const percentage = Object.keys(statsarray)[i];
+  console.log(percentage);
+  const numerator = Math.round(Number(percentage) * 12);
+  fractionArray.push(numerator);
+}
+
+console.log(fractionArray);
 ---
 
-<div class="bg-black flex flex-col flex-1 m-5 p-5 rounded-xl justify-between text-xl text-biz1">
-    <h1 class="text-2xl">The Stats</h1>
+<div
+  class="bg-black flex flex-col flex-1 m-5 p-5 rounded-xl justify-between text-xl text-biz1"
+>
+  <h1 class="text-2xl">The Stats</h1>
 
-
-    <div id="progress-bars-container" class="p-4"></div>
+  <div id="progress-bars-container" class="p-4"></div>
 
   <script>
     // Define the statsarray
@@ -78,18 +71,50 @@ const statsarray = {
 
 
 
-    <div class="flex flex-col justify-center">
-    <h2>{stat1}:</h2>
-        <div class="mt-2 bg-gray-600 rounded-full">
-            <div
-                class=`w-${val1}/12 mt-2 bg-purple-700 py-1 text-center rounded-full`
-            >
-                <div
-                    class="text-white text-sm inline-block px-2 rounded-full"
-                >
-                    {val1}
-                </div>
-            </div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="flex flex-col justify-center">
+  <template #default>
+    {#each Object.entries(statsarray) as [key, value]}
+      <h2>{key}:</h2>
+      <div class="mt-2 bg-gray-600 rounded-full">
+        <div class={`w-${fractionArray[key]}/12 mt-2 bg-purple-700 py-1 text-center rounded-full`}>
+          <div class="text-white text-sm inline-block px-2 rounded-full">
+            {Math.round(statsarray[key] * 100)}%
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    {/each}
+  </template>
+</div> -->
+
+
+
+
+    
+
+
+
+
+<!-- 
+    <div class="flex flex-col justify-center">
+      <h2>{fractionArray[key]}:</h2>
+      <div class="mt-2 bg-gray-600 rounded-full">
+        <div
+        class=`w-${fractionArray[key]}/12 mt-2 bg-purple-700 py-1 text-center rounded-full`
+        >
+        <div class="text-white text-sm inline-block px-2 rounded-full">
+          {fractionArray[value]}
+          </div>
+          </div>
+          </div>
+          </div>
+        </div> -->

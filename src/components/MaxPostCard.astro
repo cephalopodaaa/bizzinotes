@@ -1,0 +1,57 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import "../styles/global.css";
+const { frontmatter, url } = Astro.props;
+
+const { category, title, description, note, date, image } = frontmatter;
+---
+
+<!-- Remove the script tag -->
+
+<!-- Replace the ID "card" with the class "card" -->
+<article class=`flex flex-col justify-center font-${note} text-white m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl card transform hover:rotate-180 transition-transform duration-300`>
+  <div class="front relative bg-white rounded-2xl">
+    <a href={url} class="flex justify-center">
+      <Image
+        src={image.src}
+        alt={image.alt}
+        width={200}
+        aspectRatio="1:1"
+        format="avif"
+        quality={100}
+        fit="cover"
+        class="grow rounded-2xl"
+      />
+    </a>
+    <div class="absolute bottom-0 left-0 right-0 p-4 bg-slate-400 bg-opacity-75">
+      <a href={url}><h1 class="text-xl font-bold mb-2 text-white">{title}</h1></a>
+      <a href={`/the-medium/${category}`}>{category}</a>
+      <a href={`/the-notes/${note}`}>more by <span class=`text-${note}1`> {note}</span></a>
+      <p>posted: {date}</p>
+    </div>
+  </div>
+
+  <div class="back flex flex-col justify-between h-full bg-black rounded-2xl p-4 hidden">
+    <p>{description}</p>
+  </div>
+</article>
+
+<script>
+  // Get all card elements using querySelectorAll
+  const cards = document.querySelectorAll(".card");
+
+  // Iterate through each card element
+  cards.forEach((card) => {
+    // Add event listener to each card
+    card.addEventListener("mouseenter", function () {
+      card.querySelector(".front").classList.add("hidden");
+      card.querySelector(".back").classList.remove("hidden");
+    });
+
+    card.addEventListener("mouseleave", function () {
+      card.querySelector(".back").classList.add("hidden");
+      card.querySelector(".front").classList.remove("hidden");
+    });
+  });
+</script>
+

@@ -1,8 +1,9 @@
 ---
-layout: "../../layouts/MinBlogPostLayout.astro"
+layout: "../../layouts/SciencePostLayout.astro"
 title: Organising your digital life
 date: 04-05-23
 author: fiz
+
 image: {
     src: "/books/secondbrain.jpg",
     alt: "biz looking dashing",

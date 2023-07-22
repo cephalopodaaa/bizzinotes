@@ -19,38 +19,28 @@ playlist: "https://open.spotify.com/embed/playlist/1RK7Kqy4Utwqhw8Sp3ii5X?utm_so
 description: Get up and Go tunes with a citrusy twang
 slogan: yippee yipee yipee
 draft: false
-category: science
-stat1: Speediness
-stat2: Healthiness
-stat3: Easiness
-stat4: Zinginess
-stat5: Craziness
-val1: 1
-val2: 4
-val3: 11
-val4: 8
-val5: 6
+
 statsarray: {
-    speediness: 11,
-    healthiness: 8,
+    speediness: 88,
+    healthiness: 35,
     easiness: 8,
     Zinginess: 6,
     Craziness: 5,
 }
 ---
 
-{food}
-# The Cooking:
 
+# The Food:
 Super simple, all demonstrated in the gif seen above!
 
-{music}
+
+
 # The Notes:
 these tunes will get you going with all their zesty vibes. Get totally grapefruity with this white grapefruit playlist
 
 
 
-{science}
+s
 # The Health:
 Grapefuit is a magical fruit and should be taken with caution. Grapefruit contains ...... which interacts with all sorts of medication so its recommended to consult a doctor before endulging in this Grapefruity goodness. If you dont have time to consult a doctor, I will get Fiz to give you the low down
 
