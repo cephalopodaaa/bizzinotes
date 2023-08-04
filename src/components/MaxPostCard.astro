@@ -9,7 +9,7 @@ const { category, title, description, note, date, image } = frontmatter;
 <!-- Remove the script tag -->
 
 <!-- Replace the ID "card" with the class "card" -->
-<article class=`flex flex-col justify-center font-${note} text-white m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl card transform hover:rotate-180 transition-transform duration-300`>
+<article class=`flex flex-col justify-center font-${note} text-white m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl card transform hover:rotate-180  transition-transform duration-300`>
   <div class="front relative bg-white rounded-2xl">
     <a href={url} class="flex justify-center">
       <Image
@@ -31,8 +31,12 @@ const { category, title, description, note, date, image } = frontmatter;
     </div>
   </div>
 
-  <div class="back flex flex-col justify-between h-full bg-black rounded-2xl p-4 hidden">
+
+  <!-- back of the card -->
+  <div class=`back flex flex-col justify-between h-full bg-black text-${note}1 rounded-2xl p-4 hidden rotate-180`>
+    <h2 class="text-xl">{title}</h2>
     <p>{description}</p>
+
   </div>
 </article>
 

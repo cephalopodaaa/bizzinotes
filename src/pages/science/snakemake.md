@@ -3,6 +3,7 @@ layout: "../../layouts/SciencePostLayout.astro"
 title: Snakemake
 date: 29-06-23
 author: liz
+level: 2
 image: {
     src: "/final-characters/l1.png",
     alt: "liz lizzin about",

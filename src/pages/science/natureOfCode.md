@@ -3,6 +3,7 @@ layout: "../../layouts/BlogPostLayout.astro"
 title: The Nature of Code
 date: 04-05-23
 author: viz
+level: 2
 image: {
     src: "/final-characters/v1.png",
     alt: "viz looking dashing",

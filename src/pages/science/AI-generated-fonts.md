@@ -5,6 +5,7 @@
 note: Aiz
 title: AI generated fonts
 slogan: making <span>Juicy</span> fonts with <span>Spooky</span> robots
+level: 1
 image: {
     src: "/final-characters/l1.png",
     alt: "liz lizzin about",

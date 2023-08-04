@@ -3,6 +3,7 @@ layout: "../../layouts/FoodPostLayout.astro"
 title: White Grapefruit
 date: 04-05-23
 note: biz
+level: 1
 image: {
     src: "/food/whitegrapefruit.png",
     alt: "biz looking dashing",

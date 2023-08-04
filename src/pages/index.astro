@@ -6,31 +6,50 @@ import { Image, Picture } from "@astrojs/image/components";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Navbar />
-		<Image
-		src= "/final-characters/b1.png"
-		alt="biz doing his thing"
-		width="200"
-		aspectRatio="auto"
-		format="avif"
-		quality={90}
-		fit="cover"
-		class="shrink-0 animate-slidein hover:animate-waving-hand "
-	/>
-		<h2 class="text-center text-5xl text-biz1 font-biz" >test2</h2>
-		<h2 class="text-center text-5xl text-viz1 font-viz" >test2</h2>
-		<h2 class="text-center text-5xl text-fiz1 font-fiz" >test2</h2>
-		<h2 class="text-center text-5xl text-wiz1 font-wiz" >test2</h2>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navbar />
+    <div
+      class="font-biz text-viz1 text-3xl bg-slate-900 min-h-screen flex flex-col justify-center items-center
+	  			md:flex-row"
+    >
+	<button class="bg-white relative
+	after:absolute after:bg-green-300 after:inset-0 after:z-0 after:blur
+	before:absolute before:-top-10 before:-left-10 before:h-full before:w-full before:blur before:bg-blue-300
+	group p-10 hover:opacity-50 duration-700 flex items-center gap-4">
+	  <h1 class="z-10">Body</h1> 
+	  <span class="z-10 h-10 w-10 bg-amber-800 group-hover:rotate-45 duration-300"></span>
+	</button>
+      <button class="bg-white relative
+	  after:absolute after:bg-green-300 after:inset-0 after:z-0 after:blur
+	  before:absolute before:bg-biz2 before:-top-10 before:-left-10 before:h-full before:w-full before:blur 
+	  group p-10 hover:opacity-50 duration-700 flex items-center gap-4">
+		<h1 class="z-10">Mind</h1> 
+		<span class="z-10 h-10 w-10 bg-amber-800 group-hover:animate-spin duration-300"></span>
+	  </button>
+    </div>
+    <Image
+      src="/final-characters/b1.png"
+      alt="biz doing his thing"
+      width={200}
+      aspectRatio={1 / 1}
+      format="avif"
+      quality={90}
+      fit="cover"
+      class="shrink-0 animate-slidein hover:animate-waving-hand"
+    />
+    <h2 class="text-center text-5xl text-biz1 font-biz">test2</h2>
+    <h2 class="text-center text-5xl text-viz1 font-viz">test2</h2>
+    <h2 class="text-center text-5xl text-fiz1 font-fiz">test2</h2>
+    <h2 class="text-center text-5xl text-wiz1 font-wiz">test2</h2>
 
-		<ButtonFun option="Fun Button" />
-		<!-- <Menu options={options} /> -->
-	</body>
+    <ButtonFun option="Fun Button" />
+    <!-- <Menu options={options} /> -->
+  </body>
 </html>

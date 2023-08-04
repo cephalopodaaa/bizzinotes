@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: Fungi
+level: 1
 date: 04-05-23
 author: fiz
 image: {

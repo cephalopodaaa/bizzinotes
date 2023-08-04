@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/MinBlogPostLayout.astro"
 title: TestBlogPost
+level: 1
 date: 04-05-23
 author: liz
 image: {
