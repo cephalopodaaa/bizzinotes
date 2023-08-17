@@ -3,7 +3,7 @@ import React from "react";
 const styles = {
   wrapper: {
     paddingTop: "50px",
-    background: "#ECEFF1",
+    // background: "#ECEFF1",
     // height: "100%",
     // maxWidth: '80%',
     display: "flex",

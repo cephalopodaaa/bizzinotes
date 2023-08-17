@@ -3,11 +3,10 @@ import React from "react";
 const styles = {
   title: {
     width: "100%",
-    font: "biz-font",
+    font: "biz-font1",
     textAlign: "center",
-    fontSize: "3rem",
-    textDecoration: "underline",
-    color: "#2A77AE",
+    fontSize: "4rem",
+    color: "maroon",
     marginBottom: "50px",
   },
 };

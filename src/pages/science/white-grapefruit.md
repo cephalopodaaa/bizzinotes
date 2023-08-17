@@ -18,7 +18,7 @@ foodimage: {
 # }
 playlist: "https://open.spotify.com/embed/playlist/1RK7Kqy4Utwqhw8Sp3ii5X?utm_source=generator&theme=0"
 description: Get up and Go tunes with a citrusy twang
-slogan: yippee yipee yipee
+slogan: Feel your Zestiest
 draft: false
 
 statsarray: {
@@ -39,9 +39,6 @@ Super simple, all demonstrated in the gif seen above!
 # The Notes:
 these tunes will get you going with all their zesty vibes. Get totally grapefruity with this white grapefruit playlist
 
-
-
-s
 # The Health:
 Grapefuit is a magical fruit and should be taken with caution. Grapefruit contains ...... which interacts with all sorts of medication so its recommended to consult a doctor before endulging in this Grapefruity goodness. If you dont have time to consult a doctor, I will get Fiz to give you the low down
 

@@ -1,0 +1,77 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+
+const { category, title, description, author, date, image } = Astro.props;
+
+// function capitalizeFirstLetter(string) {
+//   return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+
+const note = "viz";
+const n = note[0];
+// const Note = capitalizeFirstLetter(note);
+
+
+
+
+
+const FoodPosts = await Astro.glob("../*/*.mdx");
+import MaxPostCard from "../../components/MaxPostCard.astro";
+
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title={note}>
+  <div
+    class=`flex flex-col text-${note}1 font-${note} bg-black font-biz w-full h-full m-2 p-5`
+  >
+    <div class="flex justify-between">
+      <h1 class=`text-4xl text-${note}1`>{title}</h1>
+      <h2 class=`text-3xl text-${note}2`>{description}</h2>
+    </div>
+    <div class="flex flex-row justify-around m-2">
+      <Image
+        src="/final-characters/v1.png"
+        alt="fiz the science note"
+        width={300}
+        height={500}
+        format="avif"
+        quality={100}
+        fit="fill"
+      />
+
+      <div
+        class=`bg-black flex flex-col w-2/3 p-3 text-${note}1 justify-between`
+      >
+        <h1 class="text-6xl">{note}</h1>
+        <h4 class="text-xl">Ello ello Hoomans...</h4>
+        <h4 class="text-lg">
+          I like to make things a lil more complex than <span
+            class="text-biz1 font-biz">biz's</span
+          > stuff
+        </h4>
+        <h3 class="text-xl">
+          So if thats not your jam go back to <a
+            href="./biz"
+            class="text-biz1 font-biz">biz's simple stuff</a>
+        </h3>
+		<h2 class="text-2xl">Righty Hoe... wanna see ma notes?</h2>
+      </div>
+    </div>
+
+    <section
+      class="bg-indigo-950 rounded p-7 m-7 flex-col flex flex-wrap justify-center"
+    >
+      <h1 class="text-xl">Ma Food Posts:</h1>
+      <div class=" flex flex-wrap justify-evenly">
+        {
+          FoodPosts.filter((post) => post.frontmatter.note === "viz").map(
+            (post) => (
+              <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+            )
+          )
+        }
+      </div>
+    </section>
+  </div>
+</MainLayout>

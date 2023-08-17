@@ -1,0 +1,53 @@
+<!-- ---
+import { Markdown } from '@astro/types'; // for typing
+import RecipeIngredients from './RecipeIngredients.astro';
+import RecipeInstructions from './RecipeInstructions.astro';
+import RecipeTips from './RecipeTips.astro';
+
+const content = Astro.fetchContent('./path.md');
+const markdown = content.markdown; // Assuming the markdown content is parsed here
+
+const title = markdown.metadata.title;
+const ingredients = markdown.slots.ingredients; // You'll have to extract this using your custom slots logic
+const instructions = markdown.slots.instructions; // Same here
+const tips = markdown.slots.tips; // Same here
+// Repeat for other sections as needed
+---
+
+<article>
+  <h1>{title}</h1>
+  <RecipeIngredients ingredients={ingredients} />
+  <RecipeInstructions instructions={instructions} />
+  <RecipeTips tips={tips} />
+  <!-- Repeat for other sections as needed -->
+</article>
+
+
+
+
+
+
+<!-- 
+    description
+
+
+    Certainly! To use the markdown template with an Astro layout, you would typically need to parse the markdown file and extract the relevant sections. Astro doesn't support custom slots within markdown out-of-the-box, so I'll provide an example of how you might manually break down the markdown content into separate sections for use in your layout.
+
+First, consider that you'll have a markdown file saved (e.g., recipe.md) using the template structure I provided earlier.
+
+Now, you might create an Astro component that takes the different sections as props. Here's an example .astro layout file that would use the content from that markdown:
+
+
+
+
+    You'll notice that I've used separate Astro components for each section (e.g., RecipeIngredients, RecipeInstructions, RecipeTips). You would create these as separate .astro files, and they would handle rendering the specific content for each section.
+
+The key challenge here is extracting the content for each slot from the markdown. You'll need to write custom logic to do this based on how you've defined your slots within the markdown file.
+
+Note that Astro.fetchContent is used as an example method to get the content from the markdown file. The exact method of fetching and parsing the content may vary depending on your setup, and you may need to implement custom logic to handle the slot parsing.
+
+By using separate components for each section, you can control the layout and styling for each part of the content, allowing you to scatter the text in small boxes amongst images and animations as you described.
+
+
+
+ --> 

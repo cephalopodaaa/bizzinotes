@@ -1,10 +1,61 @@
 ---
-
 import MainLayout from "../layouts/MainLayout.astro";
 import ButtonFun from "../components/ButtonFun.astro";
+
+let colors = ["#FF5733", "#C70039", "#900C3F", "#581845"]; // Example colors
+// Shuffle colors and create gradient
+const backgroundStyle = `background: radial-gradient(${colors
+  .sort(() => 0.5 - Math.random())
+  .join(",")});`;
 ---
 
 <MainLayout title="The Cooking">
-	<p>Welcome to music</p>
-	<ButtonFun option="woohooo" />
+  <p>Welcome to music</p>
+  <ButtonFun option="woohooo" />
+
+
+  
+    <div class="relative p-6 rounded-lg text-white">
+		<article>
+			<div
+			  class="relative w-1/2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-6 rounded-lg text-white"
+			>
+			  <!-- Picture -->
+			  <div class="absolute justify-center top-0 left-0 w-2/3 h-1/2 p-4 m-6 bg-white rounded-md">
+				<!-- Insert image here -->
+			  </div>
+			  <!-- Pokemon Name -->
+			  <h2 class="text-2xl mt-28 ml-4">Name</h2>
+			  <!-- Element -->
+			  <p class="mt-2 ml-4">Element</p>
+			  <!-- Other symbols and writing -->
+			  <!-- ... -->
+			</div>
+		  </article>
+      <!-- The same content as in solution 1 -->
+    </div>
+
+
+	<template>
+  <div class="relative p-6 rounded-lg text-white">
+    <svg class="absolute top-0 left-0 w-full h-full z-[-1]">
+      <filter id="psychedelic">
+        <feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="2" />
+        <feColorMatrix type="hueRotate" values="0" keyTimes="0;1" dur="15s" repeatCount="indefinite" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#psychedelic)" />
+    </svg>
+    <!-- Picture -->
+    <div class="absolute top-0 left-0 w-1/2 h-24 bg-white rounded-md">
+      <!-- Insert image here -->
+    </div>
+    <!-- Pokemon Name -->
+    <h2 class="text-2xl mt-28 ml-4">Pokemon Name</h2>
+    <!-- Element -->
+    <p class="mt-2 ml-4">Element</p>
+    <!-- Other symbols and writing -->
+    <!-- ... -->
+  </div>
+</template>
+
 </MainLayout>

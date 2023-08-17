@@ -8,15 +8,20 @@ function AminoAcid(props) {
 const styles = {
   card: {
     background: "#fff",
-    borderRadius: "2px",
+    borderRadius: "24px",
     height: "325px",
     margin: "1rem",
     position: "relative",
     width: "325px",
     boxShadow: "0 3px 6px #999, 0 3px 6px #999",
     textAlign: "left",
+    titleContainer: {
+      display: "flex",
+      flexDirection: "col", //This isnt right, need to find the correct command
+      justifyContent: "between",
+    },
     imgContainer: {
-      height: "60%",
+      height: "auto",
       overflow: "hidden",
       textAlign: "center",
       img: {
@@ -40,6 +45,11 @@ const styles = {
 
   return (
     <div style={styles.card}>
+      <div style={styles.titleContainer}>
+        <h1>{name}</h1>
+        <h1>{three_letter_code}</h1>
+
+      </div>
       <div style= {styles.card.imgContainer}>
         <img
           alt={name}

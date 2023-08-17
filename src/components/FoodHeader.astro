@@ -57,11 +57,11 @@ const {
         </div>
 
     </div>
-    <div class="flex justify-center shrink-1">
+    <div class="flex justify-around shrink-1">
         <a href={`/the-medium/${category}`} class="text-orange-300"
             >Category: {category}</a
         >
-        <a href={`/the-notes/${note}`} class="text-blue-300">more by {note}</a>
+        <a href={`/the-notes/${note}`} class=`text-${note}1 hover:text-${note}2 text-lg`>more by {note}</a>
         <p>posted: {date}</p>
     </div>
 </div>
