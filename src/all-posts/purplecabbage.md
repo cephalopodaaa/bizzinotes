@@ -1,10 +1,10 @@
 ---
 layout: "../layouts/FoodPostLayout.astro"
-title: Fried Eggs on Toast
+title: Purple Cabbage
 date: 03-07-23
-note: diz
+note: viz
 image: {
-    src: "/food/friedEggsOnToast.png",
+    src: "/food/purpleCabbage.png",
     alt: "woaah so purple, much cabbage",
 }
 foodimage: {

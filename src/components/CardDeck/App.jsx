@@ -11,7 +11,7 @@ function App() {
     // <img src={biz} />
     <Wrapper>
       <Title>The Notes</Title>
-      { friends.map( f => <FriendCard name={f.name} occupation={f.occupation} location={f.location} image={f.image} characterColor={f.color} />) }
+      { friends.map( f => <FriendCard note={f.name} occupation={f.occupation} location={f.location} image={f.image} characterColor={f.color} characterFont={f.font} />) }
     </Wrapper>
   );
 }

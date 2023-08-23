@@ -3,7 +3,8 @@ import React from "react";
 
 
 function FriendCard(props) {
-  const {name, occupation, location, image, characterColor} = props;
+  const {note, n, occupation, location, image, characterColor, characterFont} = props;
+
 
 const styles = {
   card: {
@@ -29,11 +30,11 @@ const styles = {
 
 
   return (
-    <div className="bg-slate-400 rounded-md h-80 m-4 relative w-80 align-text-left font-biz shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]">
+    <div className={`bg-slate-900 rounded-md h-80 m-4 relative w-80 align-text-left font-${note} text-${note}1 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]`}>
       <div className="h-3/5 overflow-hidden flex-1 items-center " style={styles.card.imgContainer}>
         <img
-          alt={name}
-          src={image}
+          alt={note}
+          src={`/final-characters/${note[0]}1.png`}
           className="w-24 "
           zindex={3}
            />
@@ -41,7 +42,7 @@ const styles = {
       <div style={styles.card.content} zindex={1}>
         <ul style={styles.card.content.ul}>
           <li style={styles.card.content.ul.li}>
-            <strong>Name:</strong> {name}
+            <strong>Name:</strong> {note}
           </li>
           <li style={styles.card.content.ul.li}>
             <strong>Occupation:</strong> {occupation}

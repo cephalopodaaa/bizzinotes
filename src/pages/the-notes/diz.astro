@@ -1,0 +1,28 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import MainLayout from "../../layouts/MainLayout.astro";
+import NoteLayout from "../../layouts/NoteLayout.astro";
+
+
+
+// function capitalizeFirstLetter(string) {
+//   return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+const frontmatter = {
+  title: "welcome to diz",
+  thing: "mixing and tech",
+  slogan: "yipee",
+  note: "diz",
+  date: "18/08/23",
+  description: "get dizzi with me",
+  category: "mixing",
+
+};
+
+---
+
+<MainLayout title={frontmatter.title}>
+  <NoteLayout frontmatter={frontmatter}>
+
+  </NoteLayout>
+</MainLayout>

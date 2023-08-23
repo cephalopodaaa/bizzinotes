@@ -1,0 +1,65 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+const Posts = await Astro.glob("../all-posts/*.md");
+import MaxPostCard from "../components/MaxPostCard.astro";
+
+// const { category, title, slogan, note, date, description, noteimage } =
+//   Astro.props;
+
+const { frontmatter, url } = Astro.props;
+
+
+const {
+  title,
+  slogan,
+  note,
+  date,
+  description,
+} = frontmatter;
+// saves it from being {frontmatter.title} ...ect
+
+console.log(frontmatter); //This will be terminal of vscode
+const n = note[0];
+console.log(n);
+const noteimage = `/final-characters/${n}1.png`
+// const Note = capitalizeFirstLetter(note);
+---
+
+<div
+  class=`flex flex-col text-${note}1 font-${note} bg-black w-full h-full m-2 p-5`>
+  <section class="flex justify-between">
+    <h1 class=`text-4xl text-${note}1`>{title}</h1>
+    <h2 class=`text-3xl text-${note}2`>{description}</h2>
+  </div>
+  <div class="flex flex-row justify-around m-2">
+    <Image
+      src={noteimage}
+      alt="fiz the science note"
+      width={300}
+      height={500}
+      format="avif"
+      quality={100}
+      fit="fill"
+    />
+
+    <div class=`bg-black flex flex-col w-2/3 p-3 text-white text-${note}1 justify-between`>
+      <h1 class="text-6xl">{note}</h1>
+      <h4 class="text-xl">{slogan}</h4>
+    </section>
+
+
+  <section
+    class="bg-indigo-950 rounded p-7 m-7 flex-col flex flex-wrap justify-center"
+  >
+    <h1 class="text-xl">Posts:</h1>
+    <div class="flex flex-wrap justify-evenly">
+      {
+        Posts.filter((post) => post.frontmatter.note === "diz").map(
+          (post) => (
+            <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+          )
+        )
+      }
+    </div>
+  </section>
+</div>

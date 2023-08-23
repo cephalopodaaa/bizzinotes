@@ -16,7 +16,7 @@ import React from "react";
 // };
 
 function Wrapper(props) {
-  return <div className="bg-slate-500 p-5 flex flex-wrap justify-around align-center overflow-auto">{props.children}</div>;
+  return <div className="bg-indigo-950 p-5 flex flex-wrap justify-around align-center overflow-auto">{props.children}</div>;
 }
 
 export default Wrapper;

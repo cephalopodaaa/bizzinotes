@@ -10,6 +10,9 @@ import MaxPostCard from "../../components/MaxPostCard.astro";
 
 
 import MainLayout from "../../layouts/MainLayout.astro";
+
+
+
 ---
  
 <MainLayout title={note}>
@@ -23,11 +26,11 @@ import MainLayout from "../../layouts/MainLayout.astro";
 			<Image
 				src="/final-characters/b1.png"
 				alt="fiz the science note"
-				width={200}
-				height={500}
+				width={300}
+				height={300}
 				format="avif"
-				quality={90}
-				fit="cover"
+				quality={100}
+				fit="outside"
 			/>
 
 
@@ -43,16 +46,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 
 
-			<div class="flex flex-row justify-around m-2 ">
-				<Image
-					src="/final-characters/b1.png"
-					alt="fiz the science note"
-					width={200}
-					height={500}
-					format="avif"
-					quality={90}
-					fit="cover"
-				/>
+
 		</div>
 
 	</div>
@@ -74,5 +68,4 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 
 </MainLayout>
-
 

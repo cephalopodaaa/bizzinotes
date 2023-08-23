@@ -15,11 +15,11 @@ const { category, title, description, author, date, image } = frontmatter;
         <Image
             src={image.src}
             alt={image.alt}
-            width="200"
+            width={200}
             aspectRatio="1:1"
             format="avif"
             quality={90}
-            fit="cover"
+            fit="outside"
             class="grow"
         />
     </a>
