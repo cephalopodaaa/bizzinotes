@@ -12,47 +12,35 @@ import MaxPostCard from "../../components/MaxPostCard.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 ---
  
-<MainLayout title="The Cooking">
+<MainLayout title="The Music">
 	<ButtonFun />
-	<div class="flex flex-col text-biz1 bg-slate-900 font-biz w-full h-full m-2 p-5">
+	<div class="flex flex-col text-viz1 font-viz w-full h-full m-2 p-5">
 		<div class="flex justify-between">
 		<h1 class="text-4xl text-biz1">{title}</h1>
 		<h2 class="text-3xl text-biz2">{description}</h2>
 		</div>
 		<div class="flex flex-row justify-around m-2 ">
 			<Image
-				src="/final-characters/b1.png"
+				src="/final-characters/v1.png"
 				alt="fiz the science note"
-				width={200}
-				height={500}
+				width={300}
+				height={570}
 				format="avif"
-				quality={90}
+				quality={100}
 				fit="cover"
 			/>
 
 
 
-			<div class="bg-black flex flex-col w-1/3 p-3 text-biz1 justify-between">
-				<h2 class="text-2xl">Welcome to:</h2>
-				<h1 class="text-6xl text-center ">The Food</h1>
-				<h4 class="text-xl">Riding the Road to better health, you might want to think about what you put in the tank</h4>
-				<h4 class="text-lg text-center">but dont you worry, I got yoo back</h4>
-				<h3 class="text-xl">See whats up for grabs:</h3>
+			<div class=" flex flex-col w-1/3 p-3 text-viz1 justify-between">
+				<h2 class="text-2xl">So... you're hear for</h2>
+				<h1 class="text-6xl text-center ">The Music</h1>
+				<h4 class="text-xl">Tunes for all occasions</h4>
+				<h4 class="text-lg text-center">we got yoooo back</h4>
+				<h3 class="text-xl">Heres some notes to keep you <span class="text-biz1 font-biz">bizzi</span>:</h3>
 
 			</div>
 
-
-
-			<div class="flex flex-row justify-around m-2 ">
-				<Image
-					src="/final-characters/b1.png"
-					alt="fiz the science note"
-					width={200}
-					height={500}
-					format="avif"
-					quality={100}
-					fit="cover"
-				/>
 		</div>
 
 	</div>
