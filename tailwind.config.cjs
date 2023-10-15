@@ -146,6 +146,7 @@ module.exports = {
 				piz1: "#42a158",
 				piz2: "#FFEF00",
 				pizbg: "#000",
+
 			},
 			fontFamily: {
 				biz: ['Aladin'],
@@ -175,7 +176,7 @@ module.exports = {
 				pizf2: ['Pacifico'],
 				rizf1: ['Sniglet'],
 				rizf2: ['Sniglet']
-			},	
+			},
 
 			keyframes: {
 				slidein: {

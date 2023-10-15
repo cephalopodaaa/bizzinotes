@@ -34,8 +34,10 @@ const { category, title, description, note, date, image } = frontmatter;
 
   <!-- back of the card -->
   <div class=`back flex flex-col justify-between h-full bg-black text-${note}1 rounded-2xl p-4 hidden rotate-180`>
+    <a href={url}>
     <h2 class="text-xl">{title}</h2>
     <p>{description}</p>
+    </a>
   </div>
 </article>
 

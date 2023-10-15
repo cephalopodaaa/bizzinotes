@@ -1,5 +1,10 @@
 const navData = [
   {
+    name: "The Notes",
+    path: "/the-notes",
+    message: "Hang with the Notes",
+  },
+  {
     name: "cooking",
     path: "/cooking",
     message: "Rhythmic Recipes",

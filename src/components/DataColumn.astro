@@ -1,0 +1,19 @@
+---
+import DataColumnItem from "./DataColumnItem.astro";
+
+import columnData from "../data/surfForecast.js";
+---
+
+<nav>
+    <ul class="flex flex-col m-4 p-4 justify-center">
+        {
+            columnData.map((item) => (
+                <DataColumnItem
+                    name={item.name}
+                    description={item.description}
+                />
+            ))
+        }
+    </ul>
+</nav>
+
