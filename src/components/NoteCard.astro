@@ -6,10 +6,9 @@ const { frontmatter, url } = Astro.props;
 const { note, medium, slogan, drink, image, playlist } = frontmatter;
 ---
 
-<!-- Remove the script tag --><!-- Replace the ID "card" with the class "card" -->
-<a href={url}>
-  <article
-    class=`m-5 p-5 bg-black w-full flex flex-row justify-between font-${note} text-white m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl`
+<!-- <a href={url}> -->
+  <a href={url}
+    class=`m-3 w-1/4 bg-black flex flex-row justify-around font-${note} text-white border-slate-700 rounded-2xl border-2 shadow-2xl`
   >
     <Image
       src={image.src}
@@ -23,7 +22,7 @@ const { note, medium, slogan, drink, image, playlist } = frontmatter;
     />
 
     <div
-      class=`p-4 w-5/12 flex flex-col justify-center text-${note}1`
+      class=`p-4 w-5/12 flex flex-col justify-center text-${note}1 grow`
     >
         <h2 class="text-4xl">{note}</h2>
         <h3 class="text-lg font-biz text-center">{slogan}</p>
@@ -37,5 +36,5 @@ const { note, medium, slogan, drink, image, playlist } = frontmatter;
         </div>
 
     </div>
-  </article>
-</a>
+  </a>
+<!-- </a> -->

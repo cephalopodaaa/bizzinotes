@@ -3,42 +3,31 @@ import { Image, Picture } from "@astrojs/image/components";
 
 const { category, title, description, author, date, image } = Astro.props;
 
-
 import MainLayout from "../../layouts/MainLayout.astro";
 const allPosts = await Astro.glob("./*.mdx");
 import NoteCard from "../../components/NoteCard.astro";
-
 ---
 
-<MainLayout title="The Science">
-  <div class=`flex flex-col text-biz1 font-biz w-full h-full m-2 p-5`>
-
+<div
+  class=`flex flex-col text-biz1 font-biz w-full h-full bg-gradient-to-b from-teal-400 via-violet-600 to-yellow-200`
+>
+  <MainLayout title="The Science">
     <div class="flex justify-between">
       <h1 class="text-4xl text-biz1">{title}</h1>
       <h2 class="text-3xl text-biz2">{description}</h2>
     </div>
     <div class="flex flex-row justify-around m-2">
-      <div class="flex flex-col w-2/3 bg-slate-500 p-3">
-        <h2 class="text-2xl">meet:</h2>
-        <h1 class="text-4xl text-center">The Notes</h1>
+      <div class="flex flex-col w-2/3 p-3">
+        <h1 class="text-4xl text-center mt-4 mb-0 pb-0">The Notes</h1>
       </div>
     </div>
 
-    <section class="p-7 m-7 flex-col flex flex-wrap justify-center">
-      <div class="flex flex-wrap justify-evenly">
+    <div class="flex flex-row flex-wrap justify-center">
       {
-          allPosts.map((post) => (
-              <NoteCard frontmatter={post.frontmatter} url={post.url} />
-          ))
+        allPosts.map((post) => (
+          <NoteCard frontmatter={post.frontmatter} url={post.url} />
+        ))
       }
-  
-      </div>
-
-  </section>
-
-
-
-
-
-  </div>
-</MainLayout>
+    </div>
+  </MainLayout>
+</div>
