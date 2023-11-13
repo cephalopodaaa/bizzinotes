@@ -6,9 +6,8 @@ const { frontmatter, url } = Astro.props;
 const { note, medium, slogan, drink, image, playlist } = frontmatter;
 ---
 
-<!-- <a href={url}> -->
   <a href={url}
-    class=`m-3 w-1/4 bg-black flex flex-row justify-around font-${note} text-white border-slate-700 rounded-2xl border-2 shadow-2xl`
+    class=`m-3 sm:w-1/2 md:w-1/3 xl:w-1/4 bg-black flex flex-row justify-around font-${note} text-white border-slate-700 rounded-2xl border-2 shadow-2xl`
   >
     <Image
       src={image.src}
@@ -37,4 +36,3 @@ const { note, medium, slogan, drink, image, playlist } = frontmatter;
 
     </div>
   </a>
-<!-- </a> -->
