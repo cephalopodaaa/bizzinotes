@@ -1,23 +1,23 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
+
 const { category, title, description, author, date, image } = Astro.props;
+// const { category, title, description, author, date, image } = Astro.props;
 
 const note = "biz";
 
-const allPosts = await Astro.glob("../*/*.mdx");
+const allPosts = await Astro.glob("../all-posts/*.md");
 import MaxPostCard from "../../components/MaxPostCard.astro";
-
 
 import MainLayout from "../../layouts/MainLayout.astro";
 
-
-
 ---
+
  
 <MainLayout title={note}>
 
-	<div class="flex flex-col text-biz1 bg-slate-900 font-biz w-full h-full m-2 p-5">
+	<div class="flex flex-col text-biz1 font-biz w-full h-full m-2 p-5">
 		<div class="flex justify-between">
 		<h1 class=`text-4xl text-${note}1`>{title}</h1>
 		<h2 class=`text-3xl text-${note}2`>{description}</h2>
@@ -35,7 +35,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 
 
-			<div class="bg-black flex flex-col w-1/3 p-3 text-biz1 justify-between">
+			<div class="m-4 bg-black bg-opacity-40 rounded-lg shadow-xl flex flex-col w-1/3 p-3 text-biz1 justify-between">
 				<h2 class="text-2xl">Welcome to:</h2>
 				<h1 class="text-6xl text-center ">The Food</h1>
 				<h4 class="text-xl">Riding the Road to better health, you might want to think about what you put in the tank</h4>
@@ -51,7 +51,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 	</div>
 
-	<section class="bg-slate-900 p-7 m-7 flex-col flex flex-wrap justify-center">
+	<section class="bg-slate-900 bg-opacity-40 p-7 m-7 flex-col flex flex-wrap justify-center">
         <h1 class="text-xl font-biz text-white">Posts</h1>
         <div class=" bg-slate-800 flex flex-wrap justify-evenly">
         {

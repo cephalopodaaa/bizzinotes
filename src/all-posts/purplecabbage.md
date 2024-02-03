@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/FoodPostLayout.astro"
+layout: "../layouts/FoodPostLayoutSimple.astro"
 title: Purple Cabbage
 date: 03-07-23
 note: viz
@@ -33,24 +33,8 @@ statsarray: {
     Zinginess: 6,
     Craziness: 5,
 }
+foodtext: "basically, just cut up your red cabbage and simmer it in a pan with some cider and rosemary and a 2 apples and you're awaaayyy",
+musictext: "a zesty mix that will keep you going",
+sciencetext: "Theres so many good things about red cabbage, i cant remember them all right now but I shall be back with the scientific knowledge",
 ---
-@slot(food)
-This is the food slot where are the infoabout food will be
-
-<slot name="food">
-    # The Food:
-    Super simple, all demonstrated in the gif seen above!
-</slot>
-
-@slot(music)
-This is whewre all the info on the fruity tunes will go
-<div slot="music">
-    # The Food:
-    <p>Super simple, all demonstrated in the gif seen above!</p>
-</div>
-
-@slot(science)
-lots and lots and ltos of shciecne will go here when Adam gets his act together
-
-
-loremfrfweqhngerfihnrfejiofsdaiojafsd asjioaf sdpjf asdijaopa gpdio agfsdpiojg pjioag agiopj agfpjioa gp ioagj giod wfjgwo urt hi rtgbhrt u rghe iu tbhoe  thuiero hi ghuirteo ghturieo ghrtuei oghtrueio ghueri oghturie oghutrieo ghturie oghutwirp grhuiwp rghujiweop erhuiwpoijweqrp qwoeirjhsadf gopthwerjkql jfeksapthdksajfnsdjk fopnewrjkfoeriugfhergvikrdong urdig nerui gnreu gierngui rngui ern r e    fghru ur ur grue hg sdpoijweqrp qwoeirjhsadf gopthwerjkql jfeksapthdksajfnsdjk fopnewrjkfoeriugfhergvikrdong urdig nerui gnreu gierngui rngui ern r e    fghru ur ur grue hg  erh guieropw hgrueiw ghrueiqwp herguiqp ghrueiqp ghreuiqop hgreuiqpo hguiqep huireqp hguioreqp hgruieoqp hguireoqploremfrfweqhngerfihnrfejiofsdaiojafsd asjioaf sdpjf asdijaopa gpdio agfsdpiojg pjioag agiopj agfpjioa gp ioagj giod wfjgwoip wegjioef pjgioerwp jgiorewp jgierowp jgierop jgireow pgjiorewp gjiroewp jgierow pgjeriwofp gjierowp gjiudfw op gjndufiopg jnerwnjrfgklvrbnhjgtbguihregbguiwer hgbtyui bvt ui gthbnuiv hgtruig hugri gtrhuibt rhtr u gtrhur rtgh g hjrtg tgr hgrtu grthuir hu th urt hi rtgbhrt u rghe iu tbhoe  thuiero hi ghuirteo ghturieo ghrtuei oghtrueio ghueri oghturie oghutrieo ghturie oghutwirp grhuiwp rghujiweop erhuiwpoijweqrp qwoeirjhsadf gopthwerjkql jfeksapthdksajfnsdjk fopnewrjkfoeriugfhergvikrdong urdig nerui gnreu gierngui rngui ern r e    fghru ur ur grue hg  erh guieropw hgrueiw ghrueiqwp herguiqp ghrueiqp ghreuiqop hgreuiqpo hguiqep huireqp hguioreqp hgruieoqp hguireoqp
+no content required

@@ -9,8 +9,8 @@ const { category, title, description, note, date, image } = frontmatter;
 <!-- Remove the script tag -->
 
 <!-- Replace the ID "card" with the class "card" -->
-<article class=`flex flex-col justify-center font-${note} text-white m-4 w-1/4 border-slate-900 rounded-2xl border-2 shadow-2xl card transform hover:rotate-180  transition-transform duration-300`>
-  <div class="front relative bg-white rounded-2xl">
+<article class=`flex flex-col justify-center font-${note} text-white m-4 w-1/3 border-slate-900 rounded-2xl border-2 shadow-2xl card transform hover:rotate-180  transition-transform duration-300`>
+  <div class="front relative">
     <a href={url} class="flex justify-center">
       <Image
         src={image.src}
@@ -23,11 +23,11 @@ const { category, title, description, note, date, image } = frontmatter;
         class="grow rounded-2xl"
       />
     </a>
-    <div class="absolute bottom-0 left-0 right-0 p-4 bg-slate-400 bg-opacity-75">
-      <a href={url}><h1 class="text-xl font-bold mb-2 text-white">{title}</h1></a>
-      <a href={`/the-medium/${category}`}>{category}</a>
+    <div class="absolute bottom-0 left-0 right-0 top-0 p-3 bg-slate-600 bg-opacity-75 rounded-lg ">
+      <a href={url}><h1 class="text-lg text-center font-bold mb-2 text-white">{title}</h1></a>
+      <!-- <a href={`/the-medium/${category}`}>{category}</a> -->
       <a href={`/the-notes/${note}`}>more by <span class=`text-${note}1`> {note}</span></a>
-      <p>posted: {date}</p>
+      <!-- <p>posted: {date}</p> -->
     </div>
   </div>
 
@@ -35,8 +35,9 @@ const { category, title, description, note, date, image } = frontmatter;
   <!-- back of the card -->
   <div class=`back flex flex-col justify-between h-full bg-black text-${note}1 rounded-2xl p-4 hidden rotate-180`>
     <a href={url}>
-    <h2 class="text-xl">{title}</h2>
-    <p>{description}</p>
+    <!-- <h2 class="text-xl">{title}</h2> -->
+    <p class="">{description}</p>
+    <p>{url}</p>
     </a>
   </div>
 </article>
