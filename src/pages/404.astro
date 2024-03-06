@@ -1,15 +1,30 @@
 ---
+import { Image, Picture } from "@astrojs/image/components";
 import ButtonLink from "../components/ButtonLink.astro"
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Page Not Found">
-	<p>oooppss</p>
-    <p>We may have gone too far off piste</p>
-    <button
-class="middle none center w-full rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-  data-ripple-light="true"
->Go Home</button>
-<ButtonLink option="Go home" path="/" />
-    
-</MainLayout>
+<MainLayout title="page not found">
+
+	<div class="flex flex-col text-biz1 font-biz w-full h-full m-2 p-5">
+		<div class="flex justify-between">
+		<h1 class="text-4xl text-biz1">woops!</h1>
+		<h2 class="text-3xl text-biz2">we seem to have gone too far off piste</h2>
+		</div>
+		<div class="flex flex-row justify-around m-2 ">
+        <Image
+          src="/final-characters/b1w.png"
+          alt="biz a little discombobulated"
+          width={300}
+          height={550}
+          format="avif"
+          quality={90}
+          fit="cover"
+        />
+      </div>
+      <!-- <button
+  class="middle none center w-full rounded-lg bg-pink-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+    data-ripple-light="true"
+  >Go Home</button>
+  <ButtonLink option="Go home" path="/" /> -->
+  </MainLayout>

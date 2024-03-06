@@ -1,9 +1,12 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
-const { category, title, description, author, date, image } = Astro.props;
+const { slug, category, title, description, author, date, image } = Astro.props;
 
-const allPosts = await Astro.glob("./*.md");
+const allPosts = await Astro.glob("../posts/*.mdx");
+const sciencePosts = allPosts.filter(post => post.frontmatter.category === 'science');
+
+import MaxPostCard from "../../components/MaxPostCard2.astro";
 import MinPostCard from "../../components/MinPostCard.astro";
 
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -51,19 +54,17 @@ import MainLayout from "../../layouts/MainLayout.astro";
       </div>
     </div>
 
-    <section
-      class="p-7 m-7 flex-column flex flex-wrap justify-center"
-    >
-      <h1 class="text-xl font-biz text-white">Level 1</h1>
+    <section class="p-7 m-7 flex-col flex flex-wrap justify-center">
+      <h1 class="text-xl font-viz">science notes</h1>
       <div class="flex flex-wrap justify-evenly">
-        {
-          allPosts
-            .filter((post) => post.frontmatter.level === 1)
-            .map((post) => (
-              <MinPostCard frontmatter={post.frontmatter} url={post.url} />
-            ))
-        }
+      {
+          sciencePosts.map((post) => (
+              <MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
+          ))
+      }
+  
       </div>
-    </section>
-  </div>
+
+  </section>
+
 </MainLayout>

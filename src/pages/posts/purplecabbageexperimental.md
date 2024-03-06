@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/FoodPostLayoutSimple.astro"
+layout: "../layouts/FoodPostLayout.astro"
 title: Purple Cabbage
 date: 03-07-23
 note: viz
@@ -33,6 +33,7 @@ statsarray: {
     Zinginess: 6,
     Craziness: 5,
 }
+
 foodtext: "basically, just cut up your red cabbage and simmer it in a pan with some cider and rosemary and a 2 apples and you're awaaayyy",
 musictext: "a zesty mix that will keep you going",
 sciencetext: "Theres so many good things about red cabbage, i cant remember them all right now but I shall be back with the scientific knowledge",

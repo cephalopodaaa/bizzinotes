@@ -1,11 +1,15 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
-const { category, title, description, author, date, image } = Astro.props;
+const { slug, category, title, description, author, date, image } = Astro.props;
 
 
-const allPosts = await Astro.glob("./*.mdx");
-import MaxPostCard from "../../components/MaxPostCard.astro";
+const allPosts = await Astro.glob("../posts/*.mdx");
+const foodPosts = allPosts.filter(post => post.frontmatter.category === 'food');
+
+
+
+import MaxPostCard from "../../components/MaxPostCard2.astro";
 
 
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -50,8 +54,8 @@ import MainLayout from "../../layouts/MainLayout.astro";
         <h1 class="text-xl font-biz text-white">Recipes</h1>
         <div class="flex flex-wrap justify-evenly">
         {
-            allPosts.map((post) => (
-                <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+            foodPosts.map((post) => (
+                <MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
             ))
         }
 		
@@ -63,5 +67,3 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 
 </MainLayout>
-
-

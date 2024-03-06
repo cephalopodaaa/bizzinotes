@@ -1,0 +1,166 @@
+
+
+//radial background
+
+
+
+
+body {
+    display: flex;
+}
+
+
+
+
+
+
+.title
+{
+    font-family: 'Aladin';
+    font-weight: 900px;
+    font-size:3rem;
+    text-align:right;
+}
+
+
+.title a {
+    
+    
+    background-image: var(--titleGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: bg-animation 25s infinite, alternate;
+
+}
+
+.title:hover a {
+
+    
+    background-image: var(--titleHoverGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: bg-animation 25s infinite, alternate;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul
+/*formatting unordered list*/
+{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+ul li
+/*removing bullet points*/
+{
+    list-style:none;
+    font-family: 'Aladin', cursive, Arial, Helvetica, sans-serif;
+}
+
+
+/*Second menu setup - Hover menu*/
+ul li:before
+{
+    content: attr(data-text);
+    position: absolute;
+    align-items:left;
+    top: 0%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    color: orange;
+    font-size: 6em;
+    font-weight:700;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 20px;
+    transition: 5s;
+    white-space: wrap;
+}
+ul li:hover:before
+{
+    opacity: 0.6;   /*hover menu opacity*/
+    letter-spacing: 2px;   /*hover menu spacing*/
+    
+}
+
+
+
+
+
+/*Menu a settings - menu shown before hover*/
+ul li a
+{
+    color:black;
+    font-family: 'Aladin';
+    font-size: 4vh;
+
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    background: #01ff3c;
+    color: black; /*not sure what colour this colour*/
+    
+    letter-spacing: 2px;
+    overflow: hidden;
+    /*^commenting this reveals diagonal gradiented cross through menu words*/
+    transition:1s;          /*fade-in duration*/
+    z-index: 1;
+    
+
+}
+
+/*menu when hovered*/
+ul:hover li a
+/*button 1 hover*/
+{
+    /*makes other menu options go dark*/
+    opacity: 0;
+}
+ul li a:hover
+/*button2 hover*/
+{
+    transform: scale(2.5) /*translate(0,-100%)*/;
+    z-index: 1000;
+    background: #B205F8;        /*hover colour*/
+    opacity: 0.3;
+}
+
+/*Menu a glimmer setup for hover*/
+ul li a:before
+/*position of glimmer of menu words (to left)*/
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgb(255,255,255,0.8), transparent);
+    /*^ glimmer color*/
+    transform: skewX(35deg);
+    transition: 0.5s;  /*speed glimmer move left*/
+}
+ul li a:hover:before
+/*position of glimmer to right to right*/
+{
+    left: calc(100% + 100px);
+    transition: 1s; /*speed glimmer move to right*/
+    transition-delay: 0.05s;
+}

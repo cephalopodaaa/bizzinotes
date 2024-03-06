@@ -5,8 +5,10 @@ import DataColumn from "../../components/DataColumn.astro";
 const { category, title, description, author, date, image } = Astro.props;
 
 
-const allPosts = await Astro.glob("./*.md");
-import MaxPostCard from "../../components/MaxPostCard.astro";
+const allPosts = await Astro.glob("../../posts/*.mdx");
+const musicPosts = allPosts.filter(post => post.frontmatter.category === 'music');
+
+import MaxPostCard from "../../components/MaxPostCard2.astro";
 
 
 import MainLayout from "../../layouts/MainLayout.astro";
@@ -47,11 +49,22 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 
 
+<!-- DataColumn for progress bars -->
+	<!-- <DataColumn /> -->
 
-	<DataColumn />
 
+	<section class="p-7 m-7 flex-col flex flex-wrap justify-center">
+        <h1 class="text-xl font-viz">Tunes</h1>
+        <div class="flex flex-wrap justify-evenly">
+        {
+            musicPosts.map((post) => (
+                <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+            ))
+        }
+		
+        </div>
 
-
+    </section>
 
 
 

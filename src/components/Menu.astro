@@ -1,0 +1,22 @@
+---
+const {option1} = Astro.props;
+const {option2} = Astro.props;
+const {option3} = Astro.props;
+const {option4} = Astro.props;
+const {option5} = Astro.props;
+
+const {option1message} = Astro.props;
+const {option2message} = Astro.props;
+const {option3message} = Astro.props;
+const {option4message} = Astro.props;
+const {option5message} = Astro.props;
+---
+
+
+<ul>
+    <li data-text={option1message}><a href={`/${option1}`}>{option1}</a></li>
+    <li data-text={option2message}><a href={`/${option2}`}>{option2}</a></li>
+    <li data-text={option3message}><a href={`/${option3}`}>{option3}</a></li>
+    <li data-text={option4message}><a href={`/${option4}`}>{option4}</a></li>
+    <li data-text={option5message}><a href={`/${option5}`}>{option5}</a></li>
+</ul>

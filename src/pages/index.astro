@@ -1,8 +1,54 @@
 ---
-import "../styles/global.css";
+import "../styles/global.scss";
 import Navbar from "../components/Navbar.astro";
 import ButtonFun from "../components/ButtonFun.astro";
 import { Image, Picture } from "@astrojs/image/components";
+
+
+
+import MainHead from '../components/MainHead.astro';
+// import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
+import Menu from "../components/Menu.astro";
+import "../styles/topMenu.scss"
+
+const title = ["Welcome to Cooking Notes"]
+const description = ["A Journey through Food and Music"]
+
+// import RadialBackground from '../components/RadialBackground.astro';
+// const backgroundColor1 = ["#B205F8"]
+// const backgroundColor2 = ["#01ff3c"]
+// const backgroundColor3 = ["#B205F8"]
+
+const option1 = ["cooking"]
+const option2 = ["music"]
+const option3 = ["science"]
+const option4 = ["sport"]
+const option5 = ["About"]
+
+const o1m = ["Rhythmic Recipes"]
+const o2m = ["Tantilising Tunes"]
+const o3m = ["a slice of the sci"]
+const o4m = ["injurless adventure"]
+const o5m = ["What is this place?!"]
+---
+<html lang="en">
+    <head>
+        <MainHead title={title} description={description} />
+        <style>
+            body {
+                overflow: hidden;
+            }
+
+        </style>
+        <!-- <RadialBackground backgroundColor1={backgroundColor1} backgroundColor2={backgroundColor2} backgroundColor3={backgroundColor3} /> -->
+
+    </head>
+    <body>
+        <img src="../public/final-characters/biz.png" class="noteImg">
+        <Menu option1={option1} option2={option2} option3={option3} option4={option4} option5={option5} option1message={o1m} option2message={o2m} option3message={o3m} option4message={o4m} option5message={o5m} />
+    </body>
+</html>
+
 ---
 
 <html lang="en">
@@ -14,53 +60,6 @@ import { Image, Picture } from "@astrojs/image/components";
     <title>Astro</title>
   </head>
   <body>
-    
-    <div
-      class="font-biz text-viz1 text-3xl bg-slate-900 min-h-screen justify-center items-center flex flex-col
-	  			"
-    >
-
-    <button class="bg-slate-600 relative
-    after:absolute after:bg-orange-300 after:inset-0 after:z-0 after:blur
-    before:absolute before:-top-10 before:-left-10 before:h-full before:w-full before:blur before:bg-green-300
-    group p-10 hover:opacity-50 duration-700 flex items-center gap-4">
-      <h1 class="z-10">Spirit</h1> 
-      <span class="z-10 h-10 w-10 bg-amber-300 group-hover:animate-spin duration-700"></span>
-    </button>
-
-	<button class="relative
-	after:absolute after:bg-green-300 after:inset-0 after:z-0 after:blur
-	before:absolute before:-scale-x-150 before:-center before:h-full before:w-full before:blur before:bg-blue-800
-	group p-10 hover:opacity-50 duration-700 flex items-center gap-4">
-	  <h1 class="z-10">Body</h1> 
-	  <span class="z-10 h-10 w-10 bg-amber-800 group-hover:rotate-45 duration-300"></span>
-	</button>
-  
-      <button class="bg-white relative
-	  after:absolute after:bg-green-300 after:inset-0 after:z-0 after:blur
-	  before:absolute before:bg-biz2 before:-bottom-10 before:-left-5 before:-scale-125 before:h-full before:w-full before:blur 
-	  group p-10 hover:opacity-50 duration-700 flex items-center gap-4">
-		<h1 class="z-10">Mind</h1> 
-		<span class="z-10 h-10 w-10 bg-amber-800 group-hover:animate-spin duration-300"></span>
-	  </button>
-    </div>
-    <Image
-      src="/final-characters/b1.png"
-      alt="biz doing his thing"
-      width={200}
-      height={400}
-      aspectRatio={1 / 1}
-      format="avif"
-      quality={90}
-      fit="cover"
-      class="shrink-0 animate-slidein hover:animate-waving-hand"
-    />
-    <h2 class="text-center text-5xl text-biz1 font-biz">test2</h2>
-    <h2 class="text-center text-5xl text-viz1 font-viz">test2</h2>
-    <h2 class="text-center text-5xl text-fiz1 font-fiz">test2</h2>
-    <h2 class="text-center text-5xl text-wiz1 font-wiz">test2</h2>
-
-    <ButtonFun option="Fun Button" />
-    <!-- <Menu options={options} /> -->
+    <div class=""></div>
   </body>
 </html>
