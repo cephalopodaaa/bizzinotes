@@ -3,12 +3,12 @@
 
 <footer>
   <small>
-    Copyright &copy; <span id="copyright"></span> | All rights reserved
+    Copyright &copy; <span id="copyright-year">YEAR</span> | All rights reserved
   </small>
 </footer>
 
-<script>
-  document.querySelector("#copyright").textContent = new Date()
-    .getFullYear()
-    .toString();
+<script type="module">
+  // This script will run on the client-side after the page loads
+  const currentYear = new Date().getFullYear();
+  document.getElementById('copyright-year').textContent = currentYear;
 </script>

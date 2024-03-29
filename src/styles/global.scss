@@ -222,7 +222,7 @@
        --biz-font-small:'Bilbo Swash Caps';
       --liz-font-small:'Ceviche One';
   
-      --gradient:linear-gradient(
+      --purpleGradient:linear-gradient(
           #000000,
           #000000,
           #000000,
@@ -464,6 +464,9 @@
       p {
         font-family: var(--#{$note}-f2);
       }
+      a {
+        font-family: var(--#{note}-f1);
+      }
       button {
         background-color: var(--#{$note}-color2);
         color: black;
@@ -475,13 +478,11 @@
         font-size: 22px;
       }
       button:hover {
-        color: white;
+        color: var(--#{$note}-color1);
         background-color: var(--#{$note}-color1);
         box-shadow: 5px;
-        border-color: white;
+        border-color: var(--#{$note}-color1);
         box-shadow: 10px 7px 5px var(--#{$note}-color2);;
-      
-      
       }
     }
       

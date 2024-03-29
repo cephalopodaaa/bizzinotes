@@ -7,7 +7,7 @@ import { Image, Picture } from "@astrojs/image/components";
 const { frontmatter } = Astro.props;
 console.log(frontmatter); //This will be terminal of vscode
 
-const { category, title, slogan, note, date, image, description, foodimage, playlist, statsarray, stat1, stat2, stat3, val1, val2, val3 } = frontmatter;
+const { slug, category, title, slogan, note, date, image, description, foodimage, playlist, statsarray, stat1, stat2, stat3, val1, val2, val3 } = frontmatter;
 // saves it from being {frontmatter.title} ...ect
 
 ---
@@ -41,7 +41,7 @@ const { category, title, slogan, note, date, image, description, foodimage, play
         <div class=`m-1 p-2 flex flex-row justify-between bg-grey-900 text${note}3 round-xl`>
             <div class="flex-grow m-1 p-2 bg-yellow-400 rounded-3xl ">
                 <h1 class="text-2xl">The Science</h1>
-                <slot>*** Science info goes here ***</slot>
+                <slot name="science">*** Science info goes here ***</slot>
             </div>
             
         </div>

@@ -29,8 +29,11 @@ const {
         <h1 class=`text-4xl text-${note}1`>{title}</h1>
         <h2 class=`text-3xl text-${note}2`>{slogan}</h2>
     </div>
-    <div class="w-full flex flex-col md:flex-row items-center bg-yellow-400 md:justify-around rounded-xl m-2">
-
+    <div class="w-full flex flex-row items-center bg-yellow-400 md:justify-around rounded-xl m-2">
+        
+        <h2 class="text-3xl text-center">{description}</h2>
+        
+        <div class="w-full flex flex-col md:flex-row items-center md:justify-around">
         <Image
             src={image.src}
             alt={image.alt}
@@ -44,7 +47,6 @@ const {
 
 
         <div class="flex justify-between flex-col bg-black m-5 p-5 rounded-xl shrink-1">
-            <h2 class="text-3xl text-center">{description}</h2>
             <iframe
             class="rounded-xl bg-slate-900 p-2 m-2"
             src={playlist}
@@ -55,7 +57,7 @@ const {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"></iframe>
         </div>
-
+        </div>
     </div>
     <div class="flex justify-around shrink-1">
         <a href={`/the-medium/${category}`} class="text-orange-300"

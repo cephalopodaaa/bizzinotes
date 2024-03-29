@@ -2,7 +2,7 @@
 layout: "../layouts/FoodPostLayout.astro"
 title: Purple Cabbage
 date: 03-07-23
-note: viz
+note: wiz
 image: {
     src: "/food/purpleCabbage.png",
     alt: "woaah so purple, much cabbage",

@@ -2,18 +2,13 @@
 import { Image, Picture } from "@astrojs/image/components";
 
 
-const { category, title, description, author, date, image } = Astro.props;
+const { slug, category, title, description, author, date, image } = Astro.props;
 // const { category, title, description, author, date, image } = Astro.props;
 
 const note = "biz";
 
-const allPosts = await Astro.glob("../../posts/*.mdx");
-const foodPosts = allPosts.filter(post => post.frontmatter.category === 'food');
-
-const { slug } = Astro.params;
-
-const post = allPosts.find(p => p.frontmatter.slug === slug)
-
+const allPosts = await Astro.glob("../posts/*.mdx");
+const filteredPosts = allPosts.filter(post => post.frontmatter.note === 'biz');
 
 import MaxPostCard from "../../components/MaxPostCard2.astro";
 
@@ -49,19 +44,17 @@ import MainLayout from "../../layouts/MainLayout.astro";
 				<h4 class="text-lg text-center">but dont you worry, I got yoo back</h4>
 				<h3 class="text-xl">See whats up for grabs:</h3>
 			</div>
-
 		</div>
 	</div>
 
 	<section class="bg-slate-900 bg-opacity-40 p-3 m-3 flex-col flex flex-wrap justify-center">
         <h1 class="text-xl font-biz text-biz1">Posts</h1>
         <div class=" bg-slate-800 flex flex-wrap justify-evenly">
-        {
-            foodPosts.map((post) => (
-                <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
-            ))
-        }
-		
+			{
+				filteredPosts.map((post) => (
+					<MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
+				))
+			}
         </div>
 
     </section>
