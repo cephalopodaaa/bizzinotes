@@ -2,91 +2,115 @@
 
 /* aladin-regular - latin */
 @font-face {
-    font-family: 'Aladin';
-    font-style: normal;
-    font-weight: 700;
-    font-stretch: 200%;
-    src: local(''),
-         url('./bizzifonts/aladin-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/aladin-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-family: 'Aladin';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 200%;
+  src: local(''),
+    url('./bizzifonts/aladin-v18-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/aladin-v18-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Sedgweck-ave // diz*/	 
+/* Sedgweck-ave // diz*/
 @font-face {
-    font-family: 'Sedgwick-ave';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/sedgwick-ave-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/sedgwick-ave-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Sedgwick-ave';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/sedgwick-ave-v12-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/sedgwick-ave-v12-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 /* jolly-lodger-regular - latin // creepy ledgable*/
 @font-face {
-    font-family: 'Jolly Lodger';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/jolly-lodger-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/jolly-lodger-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-/* bigelow-rules-regular - latin //creepy larger    //maybe try make thicker*/ 
+  font-family: 'Jolly Lodger';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/jolly-lodger-v20-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/jolly-lodger-v20-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* bigelow-rules-regular - latin //creepy larger    //maybe try make thicker*/
 @font-face {
-    font-family: 'Bigelow Rules';
-    font-style: normal;
-    font-weight: 400;   
-    src: local(''),
-         url('./bizzifonts/bigelow-rules-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/bigelow-rules-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Bigelow Rules';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/bigelow-rules-v23-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/bigelow-rules-v23-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 
 
 
-  /* bilbo-swash-caps-regular - latin */
+/* bilbo-swash-caps-regular - latin */
 @font-face {
-    font-family: 'Bilbo Swash Caps';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/bilbo-swash-caps-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/bilbo-swash-caps-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* just-another-hand-regular - latin //old journal vibes - pirate treasure map*/   
+  font-family: 'Bilbo Swash Caps';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/bilbo-swash-caps-v22-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/bilbo-swash-caps-v22-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* just-another-hand-regular - latin //old journal vibes - pirate treasure map*/
 @font-face {
-    font-family: 'Just Another Hand';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifontsjust-another-hand-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifontsjust-another-hand-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-@font-face {/* sniglet-regular - latin //bubbly Xiz h1*/ 
+  font-family: 'Just Another Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifontsjust-another-hand-v19-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifontsjust-another-hand-v19-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  /* sniglet-regular - latin //bubbly Xiz h1*/
 
   font-family: 'Sniglet';
   font-style: normal;
   font-weight: 800;
   src: local(''),
-       url('./bizzifonts/sniglet-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/sniglet-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/sniglet-v17-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/sniglet-v17-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* faster-one-regular - latin //wiz H1 2*/ 
+
+/* faster-one-regular - latin //wiz H1 2*/
 @font-face {
   font-family: 'Faster One';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./bizzifonts/faster-one-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/faster-one-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/faster-one-v17-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/faster-one-v17-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* ruslan-display-regular - latin //viz H1 2 */ 
+
+/* ruslan-display-regular - latin //viz H1 2 */
 @font-face {
   font-family: 'Ruslan Display';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./bizzifonts/ruslan-display-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/ruslan-display-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/ruslan-display-v22-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/ruslan-display-v22-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* stalinist-one-regular - latin  //liz h1 2*/
@@ -95,182 +119,190 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./bizzifonts/stalinist-one-v47-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/stalinist-one-v47-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/stalinist-one-v47-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/stalinist-one-v47-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* sonsie-one-regular - latin //wiz h2*/    
+
+/* sonsie-one-regular - latin //wiz h2*/
 @font-face {
   font-family: 'Sonsie One';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./bizzifonts/sonsie-one-v21-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/sonsie-one-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/sonsie-one-v21-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/sonsie-one-v21-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* frijole-regular - latin //shakey liquid*/   
+
+/* frijole-regular - latin //shakey liquid*/
 @font-face {
   font-family: 'Frijole';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('./bizzifonts/frijole-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./bizzifonts/frijole-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./bizzifonts/frijole-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/frijole-v14-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* pacifico-regular - latin */
 @font-face {
-    font-family: 'Pacifico';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/pacifico-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/pacifico-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/pacifico-v22-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/pacifico-v22-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* ceviche-one-regular - latin */
 @font-face {
-    font-family: 'Ceviche One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3rem;
-    src: local(''),
-         url('./bizzifonts/ceviche-one-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/ceviche-one-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Ceviche One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  src: local(''),
+    url('./bizzifonts/ceviche-one-v16-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/ceviche-one-v16-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 
 /* Piz = fascinate-regular - latin */
 @font-face {
-    font-family: 'Fascinate';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/fascinate-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./bizzifonts/fascinate-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-  }
+  font-family: 'Fascinate';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/fascinate-v21-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('./bizzifonts/fascinate-v21-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+}
+
 /* fascinate-inline-regular - latin */
 @font-face {
-    font-family: 'Fascinate Inline';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('./bizzifonts/fascinate-inline-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('./bizzifonts/fascinate-inline-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: 'Fascinate Inline';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/fascinate-inline-v22-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/fascinate-inline-v22-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 
 
 
 
 
-  // Tokens
-  :root {
-  
-       // C U S T O M 
-    // colours
-       --biz-color1: #01FF3c;
-       --biz-color2: #B205F8;
-    --biz-bg: #000;
-       --viz-color1: #B205F8;
-       --viz-color2: #013ffe;
-    --viz-bg: #000;
-       --diz-color1: #013ffe;
-       --diz-color2: #01AFFE;
-    --diz-bg: #000;
-       --wiz-color1: #01AFFE;
-       --wiz-color2: #d6C1d2;
-    --wiz-bg: #000;
-       --fiz-color1: #d6C1d2;
-       --fiz-color2: #01AFFE;
-    --fiz-bg: #000;
-       --liz-color1: #42a158;
-       --liz-color2: #FE9001;
-    --liz-bg: #000;
-       --piz-color1: #42a158;
-       --piz-color2: #FFEF00;
-    --piz-bg: #000;
-  
-    //fonts
-       --biz-font:'Aladin';
-       --viz-font:'Ruslan Display';
-       --diz-font:'Sedgwick-ave';
-       --wiz-font:'Faster One';
-       --fiz-font:'Ceviche One';
-       --xiz-font:'Jolly Lodger';
-       --liz-font:'Stalinist One';
-       --piz-font:'Pacifico';
-       --riz-font:'Sniglet';
-  
-    --biz-f1:'Aladin';
-    --biz-f2:'Aladin';
-       --viz-f1:'Ruslan Display';
-       --viz-f2:'Ruslan Display';
-       --diz-f1:'Ceviche One';
-       --diz-f2:'Sedgwick-ave';
-       --wiz-f1:'Faster One';
-       --wiz-f2:'Sniglet';
-       --fiz-f1:'Ceviche One';
-       --fiz-f2:'Sniglet';
-       --xiz-f1:'Jolly Lodger';
-       --xiz-f2:'Jolly Lodger';
-       --liz-f1:'Stalinist One';
-       --liz-f2:'Stalinist One';
-       --piz-f1:'Pacifico';
-       --piz-f2:'Pacifico';
-       --riz-f1:'Sniglet';
-       --riz-f2:'Sniglet';
-  
-  
-       --biz-font-small:'Bilbo Swash Caps';
-      --liz-font-small:'Ceviche One';
-  
-      --purpleGradient:linear-gradient(
-          #000000,
-          #000000,
-          #000000,
-          #000000,
-          #000000,
-          #000000,
-          #000000,
-          #000000,
-          #120119,
-          #240132,
-          #36024b,
-          #480264,
-          #5a037d,
-          #7e04af,
-          #B205F8,
-          #cb50fb
-          );
-  
-      --greenGradient: linear-gradient(
-        90deg,
-        #01ff3c,
-        #00e214,
-        #00c600,
-        #00aa00,
-        #008f00,
-        #007400,
-        #005900,
-        #004100,
-        #002f00,
-        #000000
-      );
-  
-      --purpleGradient: linear-gradient(
-        90deg,
-        #000000,
-        #000000,
-        #000000,
-        #000000,
-        #B205F8
-      )
-    
-      --buttonGradient: linear-gradient(
-      20deg,
+// Tokens
+:root {
+
+  // C U S T O M 
+  // colours
+  --biz-color1: #01FF3c;
+  --biz-color2: #B205F8;
+  --biz-bg: #000;
+  --viz-color1: #B205F8;
+  --viz-color2: #013ffe;
+  --viz-bg: #000;
+  --diz-color1: #013ffe;
+  --diz-color2: #01AFFE;
+  --diz-bg: #000;
+  --wiz-color1: #01AFFE;
+  --wiz-color2: #d6C1d2;
+  --wiz-bg: #000;
+  --fiz-color1: #d6C1d2;
+  --fiz-color2: #01AFFE;
+  --fiz-bg: #000;
+  --liz-color1: #42a158;
+  --liz-color2: #FE9001;
+  --liz-bg: #000;
+  --piz-color1: #42a158;
+  --piz-color2: #FFEF00;
+  --piz-bg: #000;
+
+  //fonts
+  --biz-font: 'Aladin';
+  --viz-font: 'Ruslan Display';
+  --diz-font: 'Sedgwick-ave';
+  --wiz-font: 'Faster One';
+  --fiz-font: 'Ceviche One';
+  --xiz-font: 'Jolly Lodger';
+  --liz-font: 'Stalinist One';
+  --piz-font: 'Pacifico';
+  --riz-font: 'Sniglet';
+
+  --biz-f1: 'Aladin';
+  --biz-f2: 'Aladin';
+  --viz-f1: 'Ruslan Display';
+  --viz-f2: 'Ruslan Display';
+  --diz-f1: 'Ceviche One';
+  --diz-f2: 'Sedgwick-ave';
+  --wiz-f1: 'Faster One';
+  --wiz-f2: 'Sniglet';
+  --fiz-f1: 'Ceviche One';
+  --fiz-f2: 'Sniglet';
+  --xiz-f1: 'Jolly Lodger';
+  --xiz-f2: 'Jolly Lodger';
+  --liz-f1: 'Stalinist One';
+  --liz-f2: 'Stalinist One';
+  --piz-f1: 'Pacifico';
+  --piz-f2: 'Pacifico';
+  --riz-f1: 'Sniglet';
+  --riz-f2: 'Sniglet';
+
+
+  --biz-font-small: 'Bilbo Swash Caps';
+  --liz-font-small: 'Ceviche One';
+
+  --purpleGradient: linear-gradient(#000000,
       #000000,
-      #01ff3c
-      );
-      --titleGradient: linear-gradient(
-      90deg,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #120119,
+      #240132,
+      #36024b,
+      #480264,
+      #5a037d,
+      #7e04af,
+      #B205F8,
+      #cb50fb);
+
+  --greenGradient: linear-gradient(90deg,
+      #01ff3c,
+      #00e214,
+      #00c600,
+      #00aa00,
+      #008f00,
+      #007400,
+      #005900,
+      #004100,
+      #002f00,
+      #000000);
+
+  --purpleGradient: linear-gradient(90deg,
+      #000000,
+      #000000,
+      #000000,
+      #000000,
+      #B205F8) --buttonGradient: linear-gradient(20deg,
+      #000000,
+      #01ff3c);
+  --titleGradient: linear-gradient(90deg,
       transparent,
       transparent,
       #000000,
@@ -278,563 +310,620 @@
       transparent,
       transparent,
       #000000,
-      transparent
-      );
-      --titleHoverGradient: linear-gradient(
-      90deg,
+      transparent);
+  --titleHoverGradient: linear-gradient(90deg,
       #000000,
       #01ff3c,
       #000000,
       #B205F8,
       #000000,
       #01ff3c,
-      #B205F8
-      );
-      --radial-gradient: radial-gradient(
-      circle,
+      #B205F8);
+  --radial-gradient: radial-gradient(circle,
       #B205F8,
       #000000,
       #01ff3c,
       #B205F8,
-      #000000
-      );
-  
-  
-  
-       // (f)ont
-       --f-u18: 11.390625em;
-       --f-u17: 9.950627481136905em;
-       --f-u16: 8.692673779389363em;
-       --f-u15: 7.59375em;
-       --f-u14: 6.63375165409127em;
-       --f-u13: 5.795115852926242em;
-       --f-u12: 5.0625em;
-       --f-u11: 4.422501102727513em;
-       --f-u10: 3.8634105686174953em;
-       --f-u9: 3.375em;
-       --f-u8: 2.9483340684850083em;
-       --f-u7: 2.575607045744997em;
-       --f-u6: 2.25em;
-       --f-u5: 1.9655560456566725em;
-       --f-u4: 1.7170713638299977em;
-       --f-u3: 1.5em;
-       --f-u2: 1.3103706971044482em;
-       --f-u1: 1.1447142425533319em;
-       --f-d1: 0.8735804647362989em;
-       --f-d2: 0.7631428283688879em;
-       --f-d3: 0.6666666666666666em;
-       --f-d4: 0.5823869764908659em;
-       --f-d5: 0.5087618855792586em;
-       --f-d6: 0.4444444444444444em;
-       --f-d7: 0.3882579843272439em;
-       --f-d8: 0.3391745903861724em;
-       --f-d9: 0.2962962962962963em;
-       --f-d10: 0.2588386562181626em;
-       --f-d11: 0.22611639359078162em;
-       --f-d12: 0.19753086419753085em;
-       --f-d13: 0.17255910414544176em;
-       --f-d14: 0.15074426239385438em;
-       --f-d15: 0.13168724279835392em;
-       --f-d16: 0.11503940276362785em;
-       --f-d17: 0.10049617492923625em;
-       --f-d18: 0.0877914951989026em;
-  
-       // (t)heme
-       --t-fg: var(--c-black);
-       --t-bg: var(--c-white);
-       --t-subdue: var(--c-gray);
-       --t-active: var(--c-blue);
-  
-  }
-  // end of root
-  
-  
-  
-  // Base
-  body {
-      /*background setup*/
-      animation: real-bg-animation 100s infinite alternate;
-      background: var(--gradient);
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-  }
-  
-  ul li {
-       margin: 0;
-      padding: 0;
-      align-items: left;
-      /*font-family: "Times New Roman", 'Times New Roman', Times, serif*/
-      font-weight:900;
-  }
-  
-  h1 {
-       font-size: var(--f-u9);
-  }
-  
-  
-  img {
-       max-width: 100%;
-       height: auto;
-  }
-  
-  .noteImg {
-       width: 200px;
+      #000000);
+
+
+
+  // (f)ont
+  --f-u18: 11.390625em;
+  --f-u17: 9.950627481136905em;
+  --f-u16: 8.692673779389363em;
+  --f-u15: 7.59375em;
+  --f-u14: 6.63375165409127em;
+  --f-u13: 5.795115852926242em;
+  --f-u12: 5.0625em;
+  --f-u11: 4.422501102727513em;
+  --f-u10: 3.8634105686174953em;
+  --f-u9: 3.375em;
+  --f-u8: 2.9483340684850083em;
+  --f-u7: 2.575607045744997em;
+  --f-u6: 2.25em;
+  --f-u5: 1.9655560456566725em;
+  --f-u4: 1.7170713638299977em;
+  --f-u3: 1.5em;
+  --f-u2: 1.3103706971044482em;
+  --f-u1: 1.1447142425533319em;
+  --f-d1: 0.8735804647362989em;
+  --f-d2: 0.7631428283688879em;
+  --f-d3: 0.6666666666666666em;
+  --f-d4: 0.5823869764908659em;
+  --f-d5: 0.5087618855792586em;
+  --f-d6: 0.4444444444444444em;
+  --f-d7: 0.3882579843272439em;
+  --f-d8: 0.3391745903861724em;
+  --f-d9: 0.2962962962962963em;
+  --f-d10: 0.2588386562181626em;
+  --f-d11: 0.22611639359078162em;
+  --f-d12: 0.19753086419753085em;
+  --f-d13: 0.17255910414544176em;
+  --f-d14: 0.15074426239385438em;
+  --f-d15: 0.13168724279835392em;
+  --f-d16: 0.11503940276362785em;
+  --f-d17: 0.10049617492923625em;
+  --f-d18: 0.0877914951989026em;
+
+  // (t)heme
+  --t-fg: var(--c-black);
+  --t-bg: var(--c-white);
+  --t-subdue: var(--c-gray);
+  --t-active: var(--c-blue);
+
+}
+// end of root
+
+
+
+// Base
+body {
+  /*background setup*/
+  animation: real-bg-animation 100s infinite alternate;
+  background: var(--gradient);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B205F8;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  align-items: left;
+  /*font-family: "Times New Roman", 'Times New Roman', Times, serif*/
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--f-u9);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.noteImg {
+  width: 200px;
+}
+
+@keyframes real-bg-animation {
+  0% {
+    background-size: 100%
   }
 
-  @keyframes real-bg-animation {
-    0% {background-size:100%}
-    20% {background-size: 100%}
-    100% {background-position:150%}
-  
+  20% {
+    background-size: 100%
   }
-  @keyframes bg-animation {
-    0% {background-position:400%}
-    100% {background-position:0%}
+
+  100% {
+    background-position: 150%
   }
-  a {
-    /* Basic link styles (if needed) */
-    color: inherit; /* Example: retain the text color */
-    text-decoration: none; /* Example: no underline */
+
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 400%
   }
-  
-  a:hover {
-    background-image: var(--titleHoverGradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 400%;
-    animation: bg-animation 25s infinite alternate;
+
+  100% {
+    background-position: 0%
   }
-  
-  
-  
-  
-  
-  button {
-    background-color: coral;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 22px;
-  
-  }
-  
-  button:hover {
-    color: white;
-    background-color: palevioletred;
-    box-shadow: 5px;
-    border-color: white;
-    box-shadow: 10px 7px 5px grey;
-  
-  
-  }
-  
-  
-  // Utils
-  
-  $notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
-  @each $note in $notes {
-  
-    
-    .#{$note}-global {
-      color: var(--#{$note}-color1);
-      font-family: var(--#{$note}-font);
-      h1 {
-        font-family: var(--#{$note}-f1);
-      }
-      h2 {
-        font-family: var(--#{$note}-f1);
-      }
-      h3 {
-        font-family: var(--#{$note}-f2);
-      }
-      h4 {
-        font-family: var(--#{$note}-f2);
-      }
-      h5 {
-        font-family: var(--#{$note}-f2);
-      }
-      h6 {
-        font-family: var(--#{$note}-f2);
-      }
-      p {
-        font-family: var(--#{$note}-f2);
-      }
-      a {
-        font-family: var(--#{note}-f1);
-      }
-      button {
-        background-color: var(--#{$note}-color2);
-        color: black;
-        border-radius: 30px;
-        border: 5px;
-        border-style: solid;
-        border-color: black;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 22px;
-      }
-      button:hover {
-        color: var(--#{$note}-color1);
-        background-color: var(--#{$note}-color1);
-        box-shadow: 5px;
-        border-color: var(--#{$note}-color1);
-        box-shadow: 10px 7px 5px var(--#{$note}-color2);;
-      }
+}
+
+a {
+  /* Basic link styles (if needed) */
+  color: inherit;
+  /* Example: retain the text color */
+  text-decoration: none;
+  /* Example: no underline */
+}
+
+a:hover {
+  background-image: var(--titleHoverGradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 25s infinite alternate;
+}
+
+
+
+
+
+button {
+  background-color: coral;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 5px;
+  border-style: solid;
+  border-color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22px;
+
+}
+
+button:hover {
+  color: white;
+  background-color: palevioletred;
+  box-shadow: 5px;
+  border-color: white;
+  box-shadow: 10px 7px 5px grey;
+
+
+}
+
+
+// Utils
+
+$notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
+
+@each $note in $notes {
+
+
+  .#{$note}-global {
+    color: var(--#{$note}-color1);
+    font-family: var(--#{$note}-font);
+
+    h1 {
+      font-family: var(--#{$note}-f1);
     }
-      
-  
-  
-  
-  
-  
-    
-       .c1-#{$note} {
-            color: var(--#{$note}-color1);
-       }
-       .c2-#{$note} {
-            background-color: var(--#{$note}-color2);
-       }
-    .bg-#{$note} {
-            background-color: var(--#{$note}-bg);
-       }
-       .f-#{$note} {
-            font-family: var(--#{$note}-font);
-       }
-    .#{$note} {
-      color: var(--#{$note}-color1);
-      font-family: var(--#{$note}-font);
-      ul li a {
-        background: var(--#{$note}-color1);
-        font-family: var(--#{$note}-f1);
-      }
+
+    h2 {
+      font-family: var(--#{$note}-f1);
     }
-  
-    .#{$note}zi {
-      color: var(--#{$note}-color1);
+
+    h3 {
+      font-family: var(--#{$note}-f2);
+    }
+
+    h4 {
+      font-family: var(--#{$note}-f2);
+    }
+
+    h5 {
+      font-family: var(--#{$note}-f2);
+    }
+
+    h6 {
+      font-family: var(--#{$note}-f2);
+    }
+
+    p {
+      font-family: var(--#{$note}-f2);
+    }
+
+    a {
+      font-family: var(--#{note}-f1);
+    }
+
+    button {
       background-color: var(--#{$note}-color2);
-      font-family: var(--#{$note}-font);
-  
-  
-      display: flex;
-  
-    }
-  
-  
-    .#{$note}-box {
-            color: var(--#{$note}-color1);
-      background-color: var(--#{$note}-bg);
-      font-family: var(--#{$note}-font);
-  
-      border-style: ridge;
-      border-width: 12px;
-      border-color: var(--#{$note}-color2);
-      border-radius: 45px;
-  
-      display: flex;
-      flex-direction: column;
-  
-      align-items: center;
-      justify-content: flex-end;
-      margin: 0rem;
-      padding:0.5rem;
-  
-    }
-  
-    .#{$note}-cards {
-  
-      font-family:  var(--#{$note}-font);
-      background-color: var(--#{$note}-color1);
       color: black;
-      margin: 2rem 4rem;
-      padding: 3rem 1rem;
-      border-radius: 90px;      
-      .row {
-          justify-content: center;
-          align-items: flex-start;
-          .card {
-              @extend .#{$note}-box;
-              padding: 1rem;
-              h4 {
-                font-family: var(--#{$note}-f1);
-              }
-              h5 {
-                font-family: var(--#{$note}-f1);
-              }
-          }
-      }
+      border-radius: 30px;
+      border: 5px;
+      border-style: solid;
+      border-color: black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 22px;
     }
-    .#{$note}-section {
+
+    button:hover {
+      color: var(--#{$note}-color1);
       background-color: var(--#{$note}-color1);
-      color: black;
+      box-shadow: 5px;
+      border-color: var(--#{$note}-color1);
+      box-shadow: 10px 7px 5px var(--#{$note}-color2);
+      ;
     }
-  
-    .#{$note}-box-animated {
-            color: var(--#{$note}-color1);
-      background-color: var(--#{$note}-bg);
-      font-family: var(--#{$note}-font);
-  
-      border-style: ridge;
-      border-width: 12px;
-      border-color: var(--#{$note}-color2);
-      border-radius: 45px;
-  
-      display: flex;
-      flex-direction: column;
+  }
+
+
+
+
+
+
+
+  .c1-#{$note} {
+    color: var(--#{$note}-color1);
+  }
+
+  .c2-#{$note} {
+    background-color: var(--#{$note}-color2);
+  }
+
+  .bg-#{$note} {
+    background-color: var(--#{$note}-bg);
+  }
+
+  .f-#{$note} {
+    font-family: var(--#{$note}-font);
+  }
+
+  .#{$note} {
+    color: var(--#{$note}-color1);
+    font-family: var(--#{$note}-font);
+
+    ul li a {
+      background: var(--#{$note}-color1);
+      font-family: var(--#{$note}-f1);
+    }
+  }
+
+  .#{$note}zi {
+    color: var(--#{$note}-color1);
+    background-color: var(--#{$note}-color2);
+    font-family: var(--#{$note}-font);
+
+
+    display: flex;
+
+  }
+
+
+  .#{$note}-box {
+    color: var(--#{$note}-color1);
+    background-color: var(--#{$note}-bg);
+    font-family: var(--#{$note}-font);
+
+    border-style: ridge;
+    border-width: 12px;
+    border-color: var(--#{$note}-color2);
+    border-radius: 45px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0rem;
+    padding: 0.5rem;
+
+  }
+
+  .#{$note}-cards {
+
+    font-family: var(--#{$note}-font);
+    background-color: var(--#{$note}-color1);
+    color: black;
+    margin: 2rem 4rem;
+    padding: 3rem 1rem;
+    border-radius: 90px;
+
+    .row {
       justify-content: center;
       align-items: flex-start;
-  
-      // align-items: center;
-      // justify-content: flex-end;
-      margin: 1rem;
-      padding:0.5rem;
-  
+
+      .card {
+        @extend .#{$note}-box;
+        padding: 1rem;
+
+        h4 {
+          font-family: var(--#{$note}-f1);
+        }
+
+        h5 {
+          font-family: var(--#{$note}-f1);
+        }
+      }
     }
-  
-  
   }
-  
-  
-  
-  .title-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+
+  .#{$note}-section {
+    background-color: var(--#{$note}-color1);
+    color: black;
   }
-  
-  
-  
-  
-  
-  .the-notes {
+
+  .#{$note}-box-animated {
+    color: var(--#{$note}-color1);
+    background-color: var(--#{$note}-bg);
+    font-family: var(--#{$note}-font);
+
     border-style: ridge;
-      border-width: 30px;
-      border-radius: 90px;
-      justify-content: center;
-      align-items: center;
-      border-color: #1DB954;
-      background-color: #252525;
-      background-color:#191414;
-  
-    iframe {
-        border-radius: 40px;
-        width: 100%;
-        height: 100%;
-        border-width: 0;
-    }
-  }
-  
-  .fungi-hero-image {
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/mushroom.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
-  
-  
-  
-  .inner-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  // color
-  $colors: 'black', 'blue', 'white';
-  @each $color in $colors {
-       // text color
-       .tc-#{$color} {
-            color: var(--c-#{color});
-       }
-       // background color
-       .bg-#{$color} {
-            background-color: var(--c-#{color});
-       }
-  }
-  
-  // font size
-  @for $i from 0 through 18 {
-       .f-u#{$i} {
-            font-size: var(--f-u#{$i});
-       }
-       .f-d#{$i} {
-            font-size: var(--f-d#{$i});
-       }
-  }
-  
-  // margin & padding
-  @for $i from 0 through 36 {
-       .ma#{$i} {
-            margin: #{0.5 * $i}rem;
-       }
-       .mt#{$i} {
-            margin-top: #{0.5 * $i}rem;
-       }
-       .mr#{$i} {
-            margin-right: #{0.5 * $i}rem;
-       }
-       .mb#{$i} {
-            margin-bottom: #{0.5 * $i}rem;
-       }
-       .ml#{$i} {
-            margin-left: #{0.5 * $i}rem;
-       }
-       .pa#{$i} {
-            padding: #{0.5 * $i}rem;
-       }
-       .pt#{$i} {
-            padding-top: #{0.5 * $i}rem;
-       }
-       .pr#{$i} {
-            padding-right: #{0.5 * $i}rem;
-       }
-       .pb#{$i} {
-            padding-bottom: #{0.5 * $i}rem;
-       }
-       .pl#{$i} {
-            padding-left: #{0.5 * $i}rem;
-       }
-  }
-  
-  // text align
-  .tac {
-       text-align: center;
-  }
-  .tal {
-       text-align: left;
-  }
-  .tar {
-       text-align: right;
-  }
-  
-  .float-left {
-    float: left;
-    margin-right: 25px;
-  }
-  
-  .float-right {
-    float: right;
-    margin-left: 25px;
-  }
-  
-  // wrapper
-  .wrapper {
-       max-width: 80em;
-       margin-left: auto;
-       margin-right: auto;
-       padding-left: 2rem;
-       padding-right: 2rem;
-  }
-  .wrapper__readable {
-       max-width: 50em;
-  }
-  
-  .note-box {
-    display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 0.5rem;
-  }
-  
-  .note-img {
-    max-width: 200px;
-    height: auto;
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    margin: 1rem;
-    padding:0.25rem;
-  }
-  .flex-container-col {
+    border-width: 12px;
+    border-color: var(--#{$note}-color2);
+    border-radius: 45px;
+
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    margin: 1rem;
-    padding:0.25rem;
-  }
-  
-  .flex-c {
     justify-content: center;
-  }
-  .flex-sa {
-    justify-content: space-around;
-  }
-  .flex-se {
-    justify-content: space-evenly;
-  }
-  .flex-sb {
-    justify-content: space-between;
-  }
-  
-  .flex-element {
-    display: flex;
-    max-width: 50%;
+    align-items: flex-start;
+
+    // align-items: center;
+    // justify-content: flex-end;
     margin: 1rem;
-    padding:0.25rem;
+    padding: 0.5rem;
+
   }
-  
-  .element {
-    max-width: 30%;
-    margin: 1rem;
-    padding:0.25rem;
+
+
+}
+
+
+
+.title-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+
+
+
+.the-notes {
+  border-style: ridge;
+  border-width: 30px;
+  border-radius: 90px;
+  justify-content: center;
+  align-items: center;
+  border-color: #1DB954;
+  background-color: #252525;
+  background-color: #191414;
+
+  iframe {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
   }
-  
-  
-  
-  
-  // card stuff
-  
-  .card-latin {
-    color: paleturquoise;
-  
-    font-style: italic;
-  
+}
+
+.fungi-hero-image {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/mushroom.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+
+.inner-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// color
+$colors: 'black', 'blue', 'white';
+
+@each $color in $colors {
+
+  // text color
+  .tc-#{$color} {
+    color: var(--c-#{color});
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+  // background color
+  .bg-#{$color} {
+    background-color: var(--c-#{color});
+  }
+}
+
+// font size
+@for $i from 0 through 18 {
+  .f-u#{$i} {
+    font-size: var(--f-u#{$i});
+  }
+
+  .f-d#{$i} {
+    font-size: var(--f-d#{$i});
+  }
+}
+
+// margin & padding
+@for $i from 0 through 36 {
+  .ma#{$i} {
+    margin: #{0.5 * $i}rem;
+  }
+
+  .mt#{$i} {
+    margin-top: #{0.5 * $i}rem;
+  }
+
+  .mr#{$i} {
+    margin-right: #{0.5 * $i}rem;
+  }
+
+  .mb#{$i} {
+    margin-bottom: #{0.5 * $i}rem;
+  }
+
+  .ml#{$i} {
+    margin-left: #{0.5 * $i}rem;
+  }
+
+  .pa#{$i} {
+    padding: #{0.5 * $i}rem;
+  }
+
+  .pt#{$i} {
+    padding-top: #{0.5 * $i}rem;
+  }
+
+  .pr#{$i} {
+    padding-right: #{0.5 * $i}rem;
+  }
+
+  .pb#{$i} {
+    padding-bottom: #{0.5 * $i}rem;
+  }
+
+  .pl#{$i} {
+    padding-left: #{0.5 * $i}rem;
+  }
+}
+
+// text align
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+// wrapper
+.wrapper {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.wrapper__readable {
+  max-width: 50em;
+}
+
+.note-box {
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0.5rem;
+}
+
+.note-img {
+  max-width: 200px;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 1rem;
+  padding: 0.25rem;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 1rem;
+  padding: 0.25rem;
+}
+
+.flex-c {
+  justify-content: center;
+}
+
+.flex-sa {
+  justify-content: space-around;
+}
+
+.flex-se {
+  justify-content: space-evenly;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-element {
+  display: flex;
+  max-width: 50%;
+  margin: 1rem;
+  padding: 0.25rem;
+}
+
+.element {
+  max-width: 30%;
+  margin: 1rem;
+  padding: 0.25rem;
+}
+
+
+
+
+// card stuff
+
+.card-latin {
+  color: paleturquoise;
+
+  font-style: italic;
+
+}
