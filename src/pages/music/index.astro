@@ -5,16 +5,16 @@ import DataColumn from "../../components/DataColumn.astro";
 const { category, title, description, author, date, image } = Astro.props;
 
 
-const allPosts = await Astro.glob("../../posts/*.mdx");
+const allPosts = await Astro.glob("../posts/*.mdx");
 const musicPosts = allPosts.filter(post => post.frontmatter.category === 'music');
 
-import MaxPostCard from "../../components/MaxPostCard2.astro";
+import MaxPostCard from "../../components/MaxPostCard3.astro";
 
 
 import MainLayout from "../../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="The Music">
+<MainLayout title="The Music" description="aaaaalll of the tuunnes" note="viz">
 	<ButtonFun />
 	<div class="flex flex-col text-viz1 font-viz w-full h-full m-2 p-5">
 		<div class="flex justify-between">

@@ -1,29 +1,21 @@
 ---
 layout: "/src/layouts/FoodPostLayout.astro"
-title: The Template
-slug: the-template
-tags: 
+title: Dental Health
+slug: dental-health
+tags: health
 category: health
 note: fiz
 level: 1
 date: 31-03-24
 image: {
-    src: "/food/whitegrapefruit.png",
-    alt: "biz looking dashing",
+    src: "/food/toothbrush.jpg",
+    alt: "a toothbrush with some toothpaste",
 }
 
 playlist: "https://open.spotify.com/embed/playlist/1RK7Kqy4Utwqhw8Sp3ii5X?utm_source=generator&theme=0"
 description: Get up and Go tunes with a citrusy twang
 slogan: Feel your Zestiest
 draft: true
-
-statsarray: {
-    speediness: 88,
-    healthiness: 35,
-    easiness: 8,
-    Zinginess: 6,
-    Craziness: 5,
-}
 ---
 # intro
 Sooooo, I went to the dentist today and they gave me lots of useful information about how best to keep healthy teeth and gums. The thing I found most useful was that they shared WHY all the things are imporant and what they aim to achieve. So I'm partially writing this so I remember, but also thought you bizzi peoples might be interested too!

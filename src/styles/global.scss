@@ -385,19 +385,20 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-height: 100svh;
 }
 
+// scroll bar formatting
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 1rem;
 }
-
 body::-webkit-scrollbar-track {
   background-color: black;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: #B205F8;
 }
+
 
 ul li {
   margin: 0;
@@ -500,7 +501,9 @@ $notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
   .#{$note}-global {
     color: var(--#{$note}-color1);
     font-family: var(--#{$note}-font);
-
+    * {
+      color: var(--#{$note}-color1);
+    }
     h1 {
       font-family: var(--#{$note}-f1);
     }
@@ -709,6 +712,7 @@ $notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
 
 .fungi-hero-image {
   height: 100vh;
+  height: 100svh;
   align-items: center;
   justify-content: center;
   background-image: url(/mushroom.jpeg);

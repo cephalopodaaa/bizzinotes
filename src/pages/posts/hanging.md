@@ -1,22 +1,19 @@
 ---
 layout: "/src/layouts/FoodPostLayout.astro"
-title: The Template
-slug: the-template
-tags: backend
-category:
-
+title: hanging
+slug: hanging
+tags: health, fitness, sport
+category: sport
 note: biz
 level: 1
 date: 30-03-24
 image: {
-    src: "/food/whitegrapefruit.png",
-    alt: "biz looking dashing",
+    src: "/post-images/hanging.jpg",
+    alt: "A man, just hanging out",
 }
  
 slogan: Hang out and get strong
 draft: true
-
-}
 ---
 so, I have this theory yeah
 where if you hang for a lil bit every day

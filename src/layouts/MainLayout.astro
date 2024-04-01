@@ -6,8 +6,8 @@ import Navbar from "../components/Navbar.astro";
 // style import
 import "../styles/global.scss";
 const {
-  title = "BizziNotes",
-  description = "Bizzi Notes by a Bizzi Bloke",
+  title = "No Title",
+  description = "No Description",
   note = "biz",
 } = Astro.props;
 ---
@@ -15,7 +15,7 @@ const {
 <html lang="en">
   <Header {title} {description} />
   <body class=`
-  biz-global ${note}-global min-h-max bg-gradient-to-b from-black via-black to-viz1
+  ${note}-global min-h-max bg-gradient-to-b from-black via-black to-viz1
   `>
     <div>
     <Navbar />
