@@ -20,19 +20,14 @@ const navData = [
     message: "Delicious Know-how",
   },
   {
-    name: "running",
-    path: "/running",
+    name: "sport",
+    path: "/sport",
     message: "How to enjoy it without getting injured",
   },
   {
     name: "where am I?",
-    path: "/asdfasf",
+    path: "/about",
     message: "What is this place?!",
-  },
-  {
-    name: "Testing-blog",
-    path: "/test",
-    message: "testtest123",
   },
 ]
 export default navData;

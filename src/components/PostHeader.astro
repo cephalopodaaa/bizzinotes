@@ -1,58 +1,56 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
-const { category, title, playlist, description, author, date, image } =
-    Astro.props;
+const {
+    category,
+    title,
+    slogan,
+    note,
+    date,
+    image,
+    playlist,
+    description,
+} = Astro.props;
 ---
 
-<div class="flex flex-col text-biz1 bg-slate-700 font-biz w-full m-2 p-5">
-    <div class="flex justify-between">
-        <h1 class="text-4xl text-biz1">{title}</h1>
-        <h2 class="text-3xl text-biz1">{description}</h2>
+<div class="flex flex-col w-full m-2 p-5">
+    <div class="flex flex-col sm:flex-row text-center justify-between">
+        <h1 class=`text-4xl md:text-5xl lg:text-6xl`>{title}</h1>
+        <h2 class=`text-2xl md:text-3xl lg:text-4xl` style={`color: var(--${note}-color2)`}>{slogan}</h2>
     </div>
-    <div class="flex flex-row justify-between bg-yellow-400 m-2">
+    <div class="w-full flex flex-col md:flex-row items-center bg-yellow-400 md:justify-around rounded-xl m-2">
+
         <Image
             src={image.src}
             alt={image.alt}
-            width="200"
-            aspectRatio="auto"
+            height={400}
+            aspectRatio="6:8"
             format="avif"
-            quality={90}
+            quality={100}
             fit="cover"
-            class="shadow-2xl shrink-0"
+            class="justify-center shadow-2xl m-3 rounded-3xl shrink-0 grow-1"
         />
 
-        <div class="p-8 bg-black flex flex-col justify-between flex-1">
-            <iframe
-                class="rounded-full bg-slate-900 p-5 opacity-40 hover:opacity-100"
-                src={playlist}
-                width="100%"
-                height="122"
-                frameBorder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
 
-            <h1 class="text-5xl text-center">{description}</h1>
-            <h3 class="text-xl"><slot name="intro" /></h3>
-            <a href={`/the-medium/${category}`} class="text-orange-300"
-                >{category}</a
-            >
-            <a href={`/the-notes/${author}`} class="text-blue-300"
-                >more by {author}</a
-            >
-            <p>posted: {date}</p>
+        <div class="flex justify-between flex-col bg-black m-5 p-5 rounded-xl shrink-1">
+            <h2 class="text-3xl text-center">{description}</h2>
+            <iframe
+            class="rounded-xl bg-slate-900 p-2 m-2"
+            src={playlist}
+            width="100%"
+            height="522"
+            frameborder="0px"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
         </div>
 
-        <Image
-            src={image.src}
-            alt={image.alt}
-            width="200"
-            aspectRatio="auto"
-            format="avif"
-            quality={90}
-            fit="cover"
-            class="shadow-2xl shrink-0 m-5"
-        />
+    </div>
+    <div class="flex justify-around shrink-1">
+        <a href={`/the-medium/${category}`} class="text-orange-300"
+            >Category: {category}</a
+        >
+        <a href={`/the-notes/${note}`} class=`text-${note}1 hover:text-${note}2 text-lg`>more by {note}</a>
+        <p>posted: {date}</p>
     </div>
 </div>

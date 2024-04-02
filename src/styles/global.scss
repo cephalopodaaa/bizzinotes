@@ -245,7 +245,7 @@
   --biz-f1: 'Aladin';
   --biz-f2: 'Aladin';
   --viz-f1: 'Ruslan Display';
-  --viz-f2: 'Ruslan Display';
+  --viz-f2: 'Aladin';
   --diz-f1: 'Ceviche One';
   --diz-f2: 'Sedgwick-ave';
   --wiz-f1: 'Faster One';
@@ -376,6 +376,30 @@
 // end of root
 
 
+// animation stuff
+@keyframes real-bg-animation {
+  0% {
+    background-size: 100%
+  }
+  20% {
+    background-size: 100%
+  }
+  100% {
+    background-position: 150%
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 400%
+  }
+
+  100% {
+    background-position: 0%
+  }
+}
+
+// end of animation stuff
 
 // Base
 body {
@@ -409,9 +433,25 @@ ul li {
 }
 
 h1 {
-  font-size: var(--f-u9);
-}
+  font-size: var(--f-u9)}
 
+h2 {
+  font-size: var(--f-u7)}
+
+h3 {
+  font-size: var(--f-u6)}
+
+h4 {
+  font-size: var(--f-u4)}
+
+h5 {
+  font-size: var(--f-u3)}
+
+h6 {
+  font-size: var(--f-u1)}
+
+p {
+  font-size: var(--f-d1)}
 
 img {
   max-width: 100%;
@@ -420,31 +460,6 @@ img {
 
 .noteImg {
   width: 200px;
-}
-
-@keyframes real-bg-animation {
-  0% {
-    background-size: 100%
-  }
-
-  20% {
-    background-size: 100%
-  }
-
-  100% {
-    background-position: 150%
-  }
-
-}
-
-@keyframes bg-animation {
-  0% {
-    background-position: 400%
-  }
-
-  100% {
-    background-position: 0%
-  }
 }
 
 a {

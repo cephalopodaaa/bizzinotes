@@ -23,7 +23,7 @@ const option1 = ["cooking"]
 const option2 = ["music"]
 const option3 = ["science"]
 const option4 = ["sport"]
-const option5 = ["About"]
+const option5 = ["about"]
 
 const o1m = ["Rhythmic Recipes"]
 const o2m = ["Tantilising Tunes"]
@@ -37,7 +37,11 @@ const o5m = ["What is this place?!"]
         <style>
             body {
                 overflow: hidden;
-            }
+                    background-image: var(--titleHoverGradient);
+                    background-size: 300% 300%;
+                    animation: bg-animation 45s ease infinite;
+                }
+            
 
         </style>
         <!-- <RadialBackground backgroundColor1={backgroundColor1} backgroundColor2={backgroundColor2} backgroundColor3={backgroundColor3} /> -->
@@ -47,19 +51,4 @@ const o5m = ["What is this place?!"]
         <img src="../public/final-characters/biz.png" class="noteImg">
         <Menu option1={option1} option2={option2} option3={option3} option4={option4} option5={option5} option1message={o1m} option2message={o2m} option3message={o3m} option4message={o4m} option5message={o5m} />
     </body>
-</html>
-
----
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <div class=""></div>
-  </body>
 </html>

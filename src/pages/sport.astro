@@ -1,13 +1,13 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
-const { category, title, description, author, date, image } = Astro.props;
+const { category, slug, title, description, author, date, image } = Astro.props;
 
 
 const allPosts = await Astro.glob("./posts/*.mdx");
 const sportPosts = allPosts.filter(post => post.frontmatter.category === 'sport' || (post.frontmatter.tags && post.frontmatter.tags.includes('sport')));
 
-import MaxPostCard from "../components/MaxPostCard2.astro";
+import MaxPostCard from "../components/MaxPostCard3.astro";
 
 
 import MainLayout from "../layouts/MainLayout.astro";
@@ -49,7 +49,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         <div class="flex flex-wrap justify-evenly">
         {
             sportPosts.map((post) => (
-                <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+                <MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
             ))
         }
 		
