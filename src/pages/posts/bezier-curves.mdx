@@ -1,0 +1,47 @@
+---
+layout: "/src/layouts/GeneralPostLayout.astro"
+title: Bezier Curves
+slug: bezier-curves
+tags: coding, math, design, graphics, css
+category: coding
+note: viz
+level: 4
+date: 06-04-24
+image: {
+    src: "/post-images/bezier.jpg",
+    alt: "Just a bezier curve getting bendy",
+}
+ 
+slogan: The Beauty in Bezier curves
+draft: true
+playlist: https://open.spotify.com/embed/playlist/7ImlXzxNWMqeDfel4NHDpU?utm_source=generator
+description: Glide through a Dreamy Drumless Reveries
+video: https://youtu.be/aVwxzDHniEw?si=boj6Mjb7g6ZatGf9&t=116
+video2: https://www.youtube.com/watch?v=jvPPXbo87ds
+---
+#### forewarning disclaimer
+This is likely entirly useless information for you, unless you trouble yourself with the art of frontend web development. However, if you do not carry this millstone, I hope this note provides a 
+
+Why would I ever need to need to learn about quadriatic equations?
+
+well billy, let me tell you about bezier curves...
+
+## What are Bezier Curves?
+Bezier curves are a type of mathematical curve that are particularly useful in computer graphics. They are defined by a set of control points with a minimum of two but no upper limit. The curve is influenced by the relative positions of the control points, and not all points on the curve are necessarily on the line defined by the control points. Bezier curves are used in vector graphics applications to model smooth curves that can be scaled indefinitely.
+
+
+## How do Bezier Curves work?
+Bezier curves work based on a mathematical formula that takes a set of control points and blends them together to create a smooth curve. The first and last control points are the end points of the curve, and the intermediate control points define the shape of the curve. The curve is calculated by a recursive division process known as de Casteljau's algorithm, which linearly interpolates between the control points. The position of each point on the curve is determined by a weighted average of a certain number of control points. The weights are determined by the Bernstein polynomials, giving the highest weight to the control points closest to the current position on the curve.
+
+## Types of Bezier Curves
+There are several types of Bezier curves, including linear, quadratic, cubic, and higher-order curves. Linear Bezier curves have two control points, quadratic curves have three, cubic curves have four, and so on. The most common type of Bezier curve is the cubic Bezier curve, which is defined by four control points. Cubic Bezier curves are used in many applications, including Adobe Illustrator and other vector graphics programs.
+
+## Applications of Bezier Curves
+Bezier curves are used in a wide range of applications, including computer graphics, animation, and font design. They are particularly useful in vector graphics applications, where they are used to model smooth curves that can be scaled indefinitely. Bezier curves are also used in animation software to create smooth motion paths for objects. In font design, Bezier curves are used to define the shapes of individual characters, allowing designers to create custom typefaces with smooth curves and sharp angles.
+
+<iframe width="560" height="315" src={frontMatter.video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## What are Splines
+Splines are a type of curve that are similar to Bezier curves, but with some key differences. Splines are defined by a set of control points, but unlike Bezier curves, the curve does not necessarily pass through all of the control points. Instead, the control points influence the shape of the curve, but the curve itself is defined by a mathematical formula. Splines are used in computer graphics and animation to create smooth curves that can be easily manipulated and scaled.
+
+<iframe width="560" height="315" src={frontMatter.video2} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -3,17 +3,18 @@ import { Image, Picture } from "@astrojs/image/components";
 
 const { category, slug, title, description, author, date, image } = Astro.props;
 
+const note = "wiz"
 
-const allPosts = await Astro.glob("./posts/*.mdx");
-const sportPosts = allPosts.filter(post => post.frontmatter.category === 'sport' || (post.frontmatter.tags && post.frontmatter.tags.includes('sport')));
+const allPosts = await Astro.glob("../posts/*.mdx");
+const sportPosts = allPosts.filter(post => post.frontmatter.category === 'sports' || (post.frontmatter.tags && post.frontmatter.tags.includes('sports')));
 
-import MaxPostCard from "../components/MaxPostCard3.astro";
+import MaxPostCard from "../../components/MaxPostCard3.astro";
 
 
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
 ---
  
-<MainLayout title="The Sport" description="Higher, Further, Faster" note="wiz">
+<MainLayout title="The Sport" description="Higher, Further, Faster" note={note}>
 
 	<div class="flex flex-col text-wiz1 font-wiz w-full h-full m-2 p-2">
 		<div class="flex justify-between">
@@ -43,7 +44,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 			</div>
 		</div>
 		<h2 class="text-xl text-center"> A place to get faster in all your sports! </h2>
-
+		
 	<section class="p-7 m-7 flex-col flex flex-wrap justify-center">
         <h1 class="text-xl font-wiz">wizzi tips:</h1>
         <div class="flex flex-wrap justify-evenly">

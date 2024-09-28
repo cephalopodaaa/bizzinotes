@@ -1,0 +1,106 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+
+
+const { slug, category, title, description, author, date, image } = Astro.props;
+// const { category, title, description, author, date, image } = Astro.props;
+
+const note = "biz";
+
+const allPosts = await Astro.glob("../posts/*.mdx");
+const filteredPosts = allPosts.filter(post => post.frontmatter.note === 'biz');
+
+import MaxPostCard from "../../components/MaxPostCard3.astro";
+
+import MainLayout from "../../layouts/MainLayout.astro";
+
+---
+<MainLayout note={note}>
+<style>
+	body {
+		background: var(--radial-gradient-earth) left top;
+		animation: bg-animation-old 60s infinite;
+		
+	}
+</style>
+ 
+
+<!-- global formating -->
+	<div class="flex flex-col text-biz1 font-biz w-full h-full m-2 p-5">
+
+		<div class="flex justify-between">
+		<h1 class=`text-4xl text-${note}1`>{title}</h1>
+		<h2 class=`text-3xl text-${note}2`>{description}</h2>
+		</div>
+
+<!-- row 1 -->
+		<div class="flex flex-row justify-around m-2 ">
+			<!-- left column -->
+			<Image
+				src="/final-characters/b1.png"
+				alt="fiz the science note"
+				width={300}
+				height={300}
+				format="avif"
+				quality={100}
+				fit="outside"
+			/>
+			<!-- Right column -->
+			<div class="m-4 bg-black bg-opacity-40 rounded-lg shadow-xl flex flex-col w-1/3 p-3 text-biz1 justify-between">
+				<h2 class="text-2xl">Why Hello there Adventurer</h2>
+				<h1 class="text-6xl text-center ">I'm Biz</h1>
+				<h4 class="text-xl">Welcome to BizziNotes</h4>
+				<h4 class="text-lg text-center">The Land of Plenty</h4>
+				<h3 class="text-xl">Feast upon organic media, sonically cultured from tunes across the ages</h3>
+			</div>
+		</div>
+
+<!-- row 2 -->
+		<div class="flex justify-between font-viz1">
+			<h1 class=`text-4xl text-viz1`>{title}</h1>
+			<h2 class=`text-3xl text-viz2`>{description}</h2>
+			</div>
+			<div class="flex flex-row justify-around m-2 ">
+				<Image
+					src="/final-characters/d1.png"
+					alt="fiz the science note"
+					width={300}
+					height={300}
+					format="avif"
+					quality={100}
+					fit="outside"
+				/>
+	
+	
+	
+				<div class="m-4 bg-black bg-opacity-40 rounded-lg shadow-xl flex flex-col w-1/3 p-3 text-biz1 justify-between">
+					<h2 class="text-2xl">Wellcome to BizziNotes</h2>
+					<h2 class"text-2xl">A digital commune</h2>
+					<h1 class="text-6xl text-center ">A self sustaining environment</h1>
+					<h4 class="text-xl">Thats not about cloute or persona</h4>
+					<h4 class="text-lg text-center">Just be yourself</h4>
+					<h4 class="text-lg text-center">In this Land of Plenty</h4>
+					<h3 class="text-xl">Feast upon organic media, sonically cultured from tunes across the ages</h3>
+				</div>
+			</div>
+
+
+	</div>
+
+	<section class="bg-slate-900 bg-opacity-40 p-3 m-3 flex-col flex flex-wrap justify-center">
+        <h1 class="text-xl font-biz text-biz1">Posts</h1>
+        <div class=" bg-slate-800 flex flex-wrap justify-evenly">
+			{
+				allPosts.map((post) => (
+					<MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
+				))
+			}
+        </div>
+
+    </section>
+
+
+
+
+</MainLayout>
+

@@ -20,8 +20,8 @@ const navData = [
     message: "Delicious Know-how",
   },
   {
-    name: "sport",
-    path: "/sport",
+    name: "sports",
+    path: "/sports",
     message: "How to enjoy it without getting injured",
   },
   {

@@ -101,6 +101,7 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
 /* ruslan-display-regular - latin //viz H1 2 */
 @font-face {
   font-family: 'Ruslan Display';
@@ -125,29 +126,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* sonsie-one-regular - latin //wiz h2*/
-@font-face {
-  font-family: 'Sonsie One';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-    url('./bizzifonts/sonsie-one-v21-latin-regular.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('./bizzifonts/sonsie-one-v21-latin-regular.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* frijole-regular - latin //shakey liquid*/
-@font-face {
-  font-family: 'Frijole';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-    url('./bizzifonts/frijole-v14-latin-regular.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('./bizzifonts/frijole-v14-latin-regular.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 /* pacifico-regular - latin */
 @font-face {
@@ -200,8 +178,87 @@
 }
 
 
+/* sonsie-one-regular - latin //wiz h2*/
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/sonsie-one-v21-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/sonsie-one-v21-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* frijole-regular - latin //shakey liquid*/
+@font-face {
+  font-family: 'Frijole';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./bizzifonts/frijole-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./bizzifonts/frijole-v14-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 
+
+
+
+.ruslan-display {
+  font-family: 'Ruslan Display', sans-serif;
+  font-size: 14px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.stalinist-one {
+  font-family: 'Stalinist One', sans-serif;
+  font-size: 14px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.bigelow-rules {
+  font-family: 'Bigelow Rules', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.bilbo-swash-caps {
+  font-family: 'Bilbo Swash Caps', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.just-another-hand {
+  font-family: 'Just Another Hand', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.sniglet {
+  font-family: 'Sniglet', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.faster-one {
+  font-family: 'Faster One', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.sonsie-one {
+  font-family: 'Sonsie One', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
+
+.frijole {
+  font-family: 'Frijole', sans-serif;
+  font-size: 16px; // Adjust as needed
+  letter-spacing: -0.5px; // Adjust as needed
+}
 
 
 // Tokens
@@ -230,17 +287,38 @@
   --piz-color1: #42a158;
   --piz-color2: #FFEF00;
   --piz-bg: #000;
+  --xiz-color1: #d6C1d2;
+  --xiz-color2: #FFEF00;
+  --xiz-bg: #000;
 
   //fonts
   --biz-font: 'Aladin';
+  --biz-font-scalar: 1;
+  --biz-letter-spacing: -0.5px;
   --viz-font: 'Ruslan Display';
+  --viz-font-scalar: 1;
+  --viz-letter-spacing: -0.5px;
   --diz-font: 'Sedgwick-ave';
+  --diz-font-scalar: 1;
+  --diz-letter-spacing: -0.5px;
   --wiz-font: 'Faster One';
+  --wiz-font-scalar: 1;
+  --wiz-letter-spacing: -0.5px;
   --fiz-font: 'Ceviche One';
+  --fiz-font-scalar: 1;
+  --fiz-letter-spacing: -0.5px;
   --xiz-font: 'Jolly Lodger';
+  --xiz-font-scalar: 1;
+  --xiz-letter-spacing: -0.5px;
   --liz-font: 'Stalinist One';
+  --liz-font-scalar: 0.4;
+  --liz-letter-spacing: -2.5px;
   --piz-font: 'Pacifico';
+  --piz-font-scalar: 1;
+  --piz-letter-spacing: -0.5px;
   --riz-font: 'Sniglet';
+  --riz-font-scalar: 1;
+  --riz-letter-spacing: -0.5px;
 
   --biz-f1: 'Aladin';
   --biz-f2: 'Aladin';
@@ -253,7 +331,7 @@
   --fiz-f1: 'Ceviche One';
   --fiz-f2: 'Sniglet';
   --xiz-f1: 'Jolly Lodger';
-  --xiz-f2: 'Jolly Lodger';
+  --xiz-f2: 'Sedgwick-ave';
   --liz-f1: 'Stalinist One';
   --liz-f2: 'Stalinist One';
   --piz-f1: 'Pacifico';
@@ -325,6 +403,76 @@
       #01ff3c,
       #B205F8,
       #000000);
+  --radial-gradient-fire-earth: radial-gradient(circle,
+      #DC143C,
+      /* Earth's Surface (Crimson) */
+      #FF8C00,
+      /* Earth's Surface (Dark Orange) */
+      #FFA500,
+      /* Earth's Surface (Orange) */
+      #FFD700,
+      /* Earth's Surface (Golden) */
+      #FFF8DC,
+      /* Earth's Surface (Pale Yellow) */
+      #FFFFFF,
+      /* Earth's Surface (White) */
+      #87CEFA,
+      /* Lower Atmosphere (Pale Blue) */
+      #00BFFF,
+      /* Lower Atmosphere (Light Blue) */
+      #0000FF,
+      /* Outer Atmosphere (Blue) */
+      #000051,
+      /* Outer Atmosphere (Dark Blue) */
+      #000005,
+      /* Deep Space (Dark Blue-Black) */
+      #00000A,
+      /* Deep Space (Darker Blue-Black) */
+      #00000F,
+      /* Deep Space (Even Darker Blue-Black) */
+      #000014,
+      /* Deep Space (Very Dark Blue-Black) */
+      #000019,
+      /* Deep Space (Extremely Dark Blue-Black) */
+      #00001E,
+      /* Deep Space (Ultra Dark Blue-Black) */
+      #000023,
+      /* Deep Space (Blackest Blue) */
+      #000000
+      /* Deep Space (Black) */
+    );
+
+
+  --radial-gradient-earth: radial-gradient(circle,
+  #8B4513, /* Earth's Surface (Saddle Brown) */
+  #A0522D, /* Earth's Surface (Sienna) */
+  #CD853F, /* Earth's Surface (Peru) */
+  #D2B48C, /* Earth's Surface (Tan) */
+  #F5DEB3, /* Earth's Surface (Wheat) */
+  #FFFFFF, /* Earth's Surface (White) */
+  #87CEFA, /* Lower Atmosphere (Pale Blue) */
+  #00BFFF, /* Lower Atmosphere (Light Blue) */
+  #0000FF, /* Outer Atmosphere (Blue) */
+  #000051, /* Outer Atmosphere (Dark Blue) */
+  #000005, /* Deep Space (Dark Blue-Black) */
+  #00000A, /* Deep Space (Darker Blue-Black) */
+  #00000F, /* Deep Space (Even Darker Blue-Black) */
+  #000014, /* Deep Space (Very Dark Blue-Black) */
+  #000019, /* Deep Space (Extremely Dark Blue-Black) */
+  #00001E, /* Deep Space (Ultra Dark Blue-Black) */
+  #000023, /* Deep Space (Blackest Blue) */
+  #100028, /* Deep Space (Deep Purple) */
+  #15002D, /* Deep Space (Subtle Deep Purple) */
+  #1A0032, /* Deep Space (Deeper Subtle Purple) */
+  #1F0037, /* Deep Space (Even Deeper Subtle Purple) */
+  #24003C, /* Deep Space (Very Subtle Deep Purple) */
+  #290041, /* Deep Space (Extremely Subtle Deep Purple) */
+  #2E0046, /* Deep Space (Ultra Subtle Deep Purple) */
+  #33004B, /* Deep Space (Subtlest Deep Purple) */
+  #380050, /* Deep Space (Faint Deep Purple) */
+  #3D0055, /* Deep Space (Faintest Deep Purple) */
+  #000000  /* Deep Space (Black) */
+    );
 
 
 
@@ -373,6 +521,7 @@
   --t-active: var(--c-blue);
 
 }
+
 // end of root
 
 
@@ -381,15 +530,17 @@
   0% {
     background-size: 100%
   }
+
   20% {
     background-size: 100%
   }
+
   100% {
     background-position: 150%
   }
 }
 
-@keyframes bg-animation {
+@keyframes text-linear-animation {
   0% {
     background-position: 400%
   }
@@ -397,6 +548,115 @@
   100% {
     background-position: 0%
   }
+}
+@keyframes background-grow {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: scale(2);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  75% {
+    transform: scale(2.5);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes background-grow2 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: scale(2);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  75% {
+    transform: scale(1.5);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes s-curve-animation {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  10% {
+    background-size: 125% 125%;
+  }
+
+  25% {
+    background-size: 150% 150%;
+  }
+
+  50% {
+    background-size: 200% 200%;
+  }
+
+  75% {
+    background-size: 150% 150%;
+  }
+
+  90% {
+    background-size: 125% 125%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@keyframes bg-animation-old {
+  0%, 100% {
+    background-size: 200% 300%;
+    /* The animation starts and ends with a large circle */
+  }
+
+  20% {
+    background-size: 150% 300%;
+    /* The circle quickly shrinks in size */
+  }
+
+  40% {
+    background-size: 200% 250%;
+    /* The circle slowly grows, changing aspect ratio */
+  }
+
+  75% {
+    background-size: 260% 200%;
+    /* The circle quickly expands to a large size */
+  }
+
+  85% {
+    background-size: 300% 270%;
+    /* The circle quickly shrinks again, but not as much as before */
+  }
+}
+@keyframes bg-animation-orbit {
+  0% {
+    background-size: 400% 700%;
+    /* start and end as a big circle */
+  }
+
+  100% {
+    background-size: 150% 300%;
+    /* grow abruptly */
+  }
+
 }
 
 // end of animation stuff
@@ -416,9 +676,11 @@ body {
 body::-webkit-scrollbar {
   width: 1rem;
 }
+
 body::-webkit-scrollbar-track {
   background-color: black;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #B205F8;
 }
@@ -433,25 +695,32 @@ ul li {
 }
 
 h1 {
-  font-size: var(--f-u9)}
+  font-size: var(--f-u9)
+}
 
 h2 {
-  font-size: var(--f-u7)}
+  font-size: var(--f-u7)
+}
 
 h3 {
-  font-size: var(--f-u6)}
+  font-size: var(--f-u6)
+}
 
 h4 {
-  font-size: var(--f-u4)}
+  font-size: var(--f-u4)
+}
 
 h5 {
-  font-size: var(--f-u3)}
+  font-size: var(--f-u3)
+}
 
 h6 {
-  font-size: var(--f-u1)}
+  font-size: var(--f-u2)
+}
 
 p {
-  font-size: var(--f-d1)}
+  font-size: var(--f-u1)
+}
 
 img {
   max-width: 100%;
@@ -508,7 +777,7 @@ button:hover {
 
 // Utils
 
-$notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
+$notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz', 'xiz', 'riz';
 
 @each $note in $notes {
 
@@ -516,9 +785,13 @@ $notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
   .#{$note}-global {
     color: var(--#{$note}-color1);
     font-family: var(--#{$note}-font);
+    letter-spacing: var(--#{$note}-letter-spacing);
+    font-size-adjust: var(--#{$note}-font-scalar);
+
     * {
       color: var(--#{$note}-color1);
     }
+
     h1 {
       font-family: var(--#{$note}-f1);
     }
@@ -608,10 +881,6 @@ $notes: 'biz', 'viz', 'diz', 'fiz', 'liz', 'wiz', 'piz';
     color: var(--#{$note}-color1);
     background-color: var(--#{$note}-color2);
     font-family: var(--#{$note}-font);
-
-
-    display: flex;
-
   }
 
 

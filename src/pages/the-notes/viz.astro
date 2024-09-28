@@ -1,27 +1,18 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
 
-const { category, title, description, author, date, image } = Astro.props;
-
-// function capitalizeFirstLetter(string) {
-//   return string.charAt(0).toUpperCase() + string.slice(1);
-// }
+const { category, slug, title, description, date, image } = Astro.props;
 
 const note = "viz";
 const n = note[0];
-// const Note = capitalizeFirstLetter(note);
 
-
-
-
-
-const FoodPosts = await Astro.glob("../*/*.mdx");
-import MaxPostCard from "../../components/MaxPostCard.astro";
+const NotePosts = (await Astro.glob("../posts/*.mdx")).filter((post) => post.frontmatter.note === "viz");
+import MaxPostCard from "../../components/MaxPostCard3.astro";
 
 import MainLayout from "../../layouts/MainLayout.astro";
 ---
 
-<MainLayout title={note}>
+<MainLayout title={note} description=`A page about ${note}` note={note}>
   <div
     class=`flex flex-col text-${note}1 font-${note} bg-black font-biz w-full h-full m-2 p-5`
   >
@@ -62,12 +53,12 @@ import MainLayout from "../../layouts/MainLayout.astro";
     <section
       class="bg-indigo-950 rounded p-7 m-7 flex-col flex flex-wrap justify-center"
     >
-      <h1 class="text-xl">Ma Food Posts:</h1>
+      <h1 class="text-xl text-center">Ma Posts:</h1>
       <div class=" flex flex-wrap justify-evenly">
         {
-          FoodPosts.filter((post) => post.frontmatter.note === "viz").map(
+          NotePosts.map(
             (post) => (
-              <MaxPostCard frontmatter={post.frontmatter} url={post.url} />
+              <MaxPostCard frontmatter={post.frontmatter} url={`/posts/${post.frontmatter.slug}`} />
             )
           )
         }
